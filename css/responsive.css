@@ -14,6 +14,9 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  .div-wrapper {
+    min-height: 400px !important;
+  }
 }
 @media (max-width: 1199px) {
   .feature-banner .opacity h2 {padding: 0;}
@@ -100,6 +103,7 @@
   .theme-sidebar-one,.blog-sidebar {margin-top: 60px;}
   .contact-us-section .form-wrapper {height: auto;}
   #theme-main-banner .camera_pag {left:2px;}
+    
 } 
 /*(max-width: 991px)*/
 
