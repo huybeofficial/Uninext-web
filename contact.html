@@ -154,19 +154,17 @@
 					</div>
 					<div class="col-lg-7 col-12">
 						<div class="form-wrapper">
-							<form action="inc/sendemail.php" class="theme-form-one form-validation" autocomplete="off">
+							<form name="submit-uninext" class="theme-form-one form-validation" autocomplete="off">
 								<div class="row">
-									<div class="col-sm-6 col-12"><input type="text" placeholder="Họ tên *" name="name">
-									</div>
-									<div class="col-sm-6 col-12"><input type="text" placeholder="Điện thoại *"
-											name="phone"></div>
-									<div class="col-sm-12 col-12"><input type="email" placeholder="Email *"
-											name="email"></div>
-									<!-- <div class="col-sm-6 col-12"><input type="text" placeholder="Website *" name="web"></div> -->
-									<div class="col-12"><textarea placeholder="Message" name="Lời nhắn"></textarea>
-									</div>
+									<div class="col-sm-6 col-12"><input autofocus name="Name" type="text" placeholder="Họ tên"></div>
+									<div class="col-sm-6 col-12"><input name="Phone" type="number" required placeholder="Điện thoại *"></div>
+									<div class="col-sm-12 col-12"><input name="Email" required type="email" placeholder="Email *"></div>
+									<div class="col-12"><textarea placeholder="Lời nhắn" name="Message" type="text"></textarea></div>
 								</div> <!-- /.row -->
-								<button class="theme-button-one hover-content">Gửi thông tin</button>
+								<button style="min-width: 200px; min-height: 50px;" class="theme-button-one hover-content" type="submit">
+									<i id="submit-spinner" style="display: none;"  class="fa fa-spinner fa-spin"></i>
+									<span id="submit-text">Gửi thông tin</span>
+								</button>
 							</form>
 						</div> <!-- /.form-wrapper -->
 					</div> <!-- /.col- -->
@@ -178,7 +176,7 @@
 			<div class="alert-wrapper" id="alert-success">
 				<div id="success">
 					<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
-					<div class="wrapper">
+					<div class="wrapper" style="font-size: 20px;">
 						<p>Gửi thành công!</p>
 					</div>
 				</div>
@@ -186,8 +184,8 @@
 			<div class="alert-wrapper" id="alert-error">
 				<div id="error">
 					<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
-					<div class="wrapper">
-						<p>Xin lỗi! Gửi tin nhắn thất bại.</p>
+					<div class="wrapper" style="font-size: 20px;">
+						<p>Xin lỗi! Gửi không thành công.</p>
 					</div>
 				</div>
 			</div> <!-- End of .alert_wrapper -->
@@ -325,6 +323,45 @@
 		<!-- Theme js -->
 		<script src="js/theme.js"></script>
 		<!-- <script src="js/map-script.js"></script> -->
+
+		<!-- Contact Form Submission -->
+		<script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycby29WNjylegYedy6dlBDp546CVtJZ5_BdjCTDiocTqqH2xo304Ek6zLzMqX65qUciD6/exec'
+			const form = document.forms['submit-uninext']
+			const submitText = document.getElementById('submit-text');
+			const submitSpinner = document.getElementById('submit-spinner');
+			const alertSuccess = document.getElementById('alert-success');
+			const alertError = document.getElementById('alert-error');
+
+			form.addEventListener('submit', e => {
+				e.preventDefault()
+				const phoneField = form.elements['Phone'];
+				const emailField = form.elements['Email'];
+
+				if (!phoneField.value || !emailField.value) {
+					alert('Vui lòng nhập số điện thoại và Email để chúng tôi có thể liên hệ tới bạn.');
+					return;
+				}
+				submitText.style.display = 'none';
+				submitSpinner.style.display = 'block';
+
+				fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+					.then(response => {
+						console.log('Success!', response)
+						// Hide spinner and show success message
+						submitText.style.display = 'block';
+						submitSpinner.style.display = 'none';
+						alertSuccess.style.display = 'block';
+					})
+					.catch(error => {
+						console.error('Error!', error.message)
+						// Hide spinner and show error message
+						submitText.style.display = 'block';
+						submitSpinner.style.display = 'none';
+						alertError.style.display = 'block';
+					})
+			}) 
+		</script>
 	</div> <!-- /.main-page-wrapper -->
 </body>
 
