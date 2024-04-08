@@ -1897,6 +1897,9 @@ body .theme-button-one:hover {
 
 .our-case .single-case-block img {
   width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
   border-radius: 5px;
 }
 
