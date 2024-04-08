@@ -381,12 +381,17 @@
 					return alert('Vui lòng nhập số điện thoại và Email để chúng tôi có thể liên hệ tới bạn.');
 				}
 				if(!is_number(phoneField.value)) {
-					return errorPhone.style.display = 'block';
+					errorPhone.style.display = 'block';
+					return alert('Vui lòng nhập đúng số điện thoại!');
 
 				}
+				errorPhone.style.display = 'none';
 				if (!is_email(emailField.value)) {
-					return errorEmail.style.display = 'block';
+					errorEmail.style.display = 'block';
+					return alert('Vui lòng nhập đúng email!');
 				}
+				errorEmail.style.display = 'none';
+
 				submitText.style.display = 'none';
 				submitSpinner.style.display = 'block';
 
