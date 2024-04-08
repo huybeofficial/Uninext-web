@@ -10,6 +10,9 @@
 */
 
 @media (min-width: 992px) {
+  .footer-list {
+      padding-left: 3rem !important;
+    }
   .container {
     padding-left: 0 !important;
     padding-right: 0 !important;
