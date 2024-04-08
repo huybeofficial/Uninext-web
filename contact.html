@@ -156,15 +156,37 @@
 						<div class="form-wrapper">
 							<form name="submit-uninext" class="theme-form-one form-validation" autocomplete="off">
 								<div class="row">
-									<div class="col-sm-6 col-12"><input autofocus name="Name" type="text" placeholder="Họ tên"></div>
-									<div class="col-sm-6 col-12"><input name="Phone" type="number" required placeholder="Điện thoại *"></div>
-									<div class="col-sm-12 col-12"><input name="Email" required type="email" placeholder="Email *"></div>
-									<div class="col-12"><textarea placeholder="Lời nhắn" name="Message" type="text"></textarea></div>
+									<div class="col-sm-6 col-12"><input autofocus name="Name" type="text"
+											placeholder="Họ tên"></div>
+									<div class="col-sm-6 col-12 flex-row d-flex">
+										<input maxlength="15" minlength="9" name="Phone" type="text" required
+											placeholder="Điện thoại *">
+										<i title="Không đúng định dạng!" id="error-phone" class="fa fa-warning"
+											style="font-size:20px;color:#f03838; display: none;"></i>
+									</div>
+									<div class="col-sm-12 col-12 flex-row d-flex">
+										<input name="Email" required type="email" placeholder="Email *">
+										<i title="Không đúng định dạng!" id="error-email" class="fa fa-warning"
+											style="font-size:20px;color:#f03838; display: none;"></i>
+									</div>
+									<div class="col-12"><textarea placeholder="Lời nhắn" name="Message"
+											type="text"></textarea></div>
 								</div> <!-- /.row -->
-								<button style="min-width: 200px; min-height: 50px;" class="theme-button-one hover-content" type="submit">
-									<i id="submit-spinner" style="display: none;"  class="fa fa-spinner fa-spin"></i>
-									<span id="submit-text">Gửi thông tin</span>
-								</button>
+								<div id="success-form">
+									<button id="btn-submit" style="min-width: 200px; min-height: 50px;" class="theme-button-one hover-content"
+										type="submit">
+										<i id="submit-spinner" style="display: none;" class="fa fa-spinner fa-spin"></i>
+										<span id="submit-text">Gửi thông tin</span>
+									</button>
+									<div id="success-submit"
+										style="display: none; background: rgba(127, 194, 65, 0.8); font-size: 16px; font-weight: 500; line-height: 1.4; text-align: center; color: #fff; padding: 10px 20px; white-space: normal;">
+										<p>Cảm ơn bạn đã gửi yêu cầu liên hệ cho chúng tôi!</p>
+									</div>
+								</div>
+								<div id="error-form"
+									style="display: none; margin-top: 5px; background: #f03838; font-size: 16px; font-weight: 500; line-height: 1.4; text-align: center; color: #fff; padding: 10px 20px; white-space: normal;">
+									<p>Đã có lỗi xảy ra, vui lòng thử lại!</p>
+								</div>
 							</form>
 						</div> <!-- /.form-wrapper -->
 					</div> <!-- /.col- -->
@@ -173,14 +195,14 @@
 
 			<!--Contact Form Validation Markup -->
 			<!-- Contact alert -->
-			<div class="alert-wrapper" id="alert-success">
+			<!-- <div class="alert-wrapper" id="alert-success">
 				<div id="success">
 					<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
 					<div class="wrapper" style="font-size: 20px;">
 						<p>Gửi thành công!</p>
 					</div>
 				</div>
-			</div> <!-- End of .alert_wrapper -->
+			</div>
 			<div class="alert-wrapper" id="alert-error">
 				<div id="error">
 					<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
@@ -188,7 +210,7 @@
 						<p>Xin lỗi! Gửi không thành công.</p>
 					</div>
 				</div>
-			</div> <!-- End of .alert_wrapper -->
+			</div> -->
 		</div> <!-- /.contact-us-section -->
 
 
@@ -212,7 +234,7 @@
 			<div class="top-footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-4 col-sm-6 col-12 logo-widget">
+						<div class="col-lg-3 col-12 logo-widget">
 							<div class="logo"><a href="index.html"><img style="width: 300px;"
 										src="images/logo/Uninext_white.png" alt=""></a></div>
 							<p>Uninext là một công ty công nghệ chuyên cung cấp các giải pháp và dịch vụ công nghệ thông
@@ -224,27 +246,27 @@
 								tôi sẽ cùng bạn xây dựng một doanh nghiệp hiện đại, năng động và hiệu quả hơn.</p>
 
 						</div> <!-- /.logo-widget -->
-						<div class="col-lg-2 col-sm-6 col-12 footer-list">
-							<h6 class="title">EXPLORE</h6>
+						<div class="col-lg-3 col-12 footer-list">
+							<h6 class="title text-start">EXPLORE</h6>
 							<ul>
 								<li><a href="about.html">Về Uninext</a></li>
 								<li><a href="#">Giải pháp của chúng tôi</a></li>
 								<li><a href="#">Lĩnh vực</a></li>
-								<li><a href="#">Tin tức</a></li>
 								<li><a href="contact.html">Liên hệ</a></li>
 							</ul>
 						</div> <!-- /.footer-list -->
 
-						<div class="col-lg-3 col-sm-6 col-12  footer-list">
+						<div class="col-lg-3 col-12  footer-list">
 							<h6 class="title">Sản phẩm</h6>
 							<ul>
+								<li><a href="offshore-service.html#PCCC">Ứng dụng quản lý thiết bị PCCC</a></li>
+								<li><a href="product-service.html#Carnext">Phần mềm quản lý gara</a></li>
+								<li><a href="product-service.html#Carinfo">Phần mềm quản lý kho</a></li>
 								<li><a href="about.html">Phát triển phần mềm theo yêu cầu</a></li>
-								<li><a href="#">Phần mềm quản lý gara</a></li>
-								<li><a href="#">Phần mềm quản lý kho</a></li>
 							</ul>
 						</div> <!-- /.footer-gallery -->
 
-						<div class="col-lg-3 col-sm-6 col-12 contact-widget">
+						<div class="col-lg-3 col-12 contact-widget">
 							<h6 class="title">Thông tin liên hệ</h6>
 							<ul>
 								<li>
@@ -323,15 +345,34 @@
 		<!-- Theme js -->
 		<script src="js/theme.js"></script>
 		<!-- <script src="js/map-script.js"></script> -->
-
 		<!-- Contact Form Submission -->
 		<script>
 			const scriptURL = 'https://script.google.com/macros/s/AKfycby29WNjylegYedy6dlBDp546CVtJZ5_BdjCTDiocTqqH2xo304Ek6zLzMqX65qUciD6/exec'
 			const form = document.forms['submit-uninext']
+
+			const successForm = document.getElementById('success-form');
+			const errorForm = document.getElementById('error-form');
+
+
+			const btnSubmit = document.getElementById('btn-submit');
+			const successSubmit = document.getElementById('success-submit');
+
+
 			const submitText = document.getElementById('submit-text');
 			const submitSpinner = document.getElementById('submit-spinner');
-			const alertSuccess = document.getElementById('alert-success');
-			const alertError = document.getElementById('alert-error');
+
+			const errorPhone = document.getElementById('error-phone');
+			const errorEmail = document.getElementById('error-email');
+
+			// Validate
+			const is_email = (email = "") => {
+				// eslint-disable-next-line
+				const reg = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+				return reg.test(email)
+			}
+			const is_number = (object) => {
+					return !isNaN(Number(object));
+				}
 
 			form.addEventListener('submit', e => {
 				e.preventDefault()
@@ -339,8 +380,14 @@
 				const emailField = form.elements['Email'];
 
 				if (!phoneField.value || !emailField.value) {
-					alert('Vui lòng nhập số điện thoại và Email để chúng tôi có thể liên hệ tới bạn.');
-					return;
+					return alert('Vui lòng nhập số điện thoại và Email để chúng tôi có thể liên hệ tới bạn.');
+				}
+				if(!is_number(phoneField.value)) {
+					return errorPhone.style.display = 'block';
+
+				}
+				if (!is_email(emailField.value)) {
+					return errorEmail.style.display = 'block';
 				}
 				submitText.style.display = 'none';
 				submitSpinner.style.display = 'block';
@@ -349,16 +396,20 @@
 					.then(response => {
 						console.log('Success!', response)
 						// Hide spinner and show success message
+						errorPhone.style.display = 'none';
+						errorEmail.style.display = 'none';
 						submitText.style.display = 'block';
 						submitSpinner.style.display = 'none';
-						alertSuccess.style.display = 'block';
+						btnSubmit.style.display = 'none';
+						successSubmit.style.display = 'block';
+						return form.reset();
 					})
 					.catch(error => {
 						console.error('Error!', error.message)
 						// Hide spinner and show error message
 						submitText.style.display = 'block';
-						submitSpinner.style.display = 'none';
-						alertError.style.display = 'block';
+						successForm.style.display = 'none';
+						errorForm.style.display = 'block';
 					})
 			}) 
 		</script>
