@@ -1591,6 +1591,8 @@ body .theme-button-one:hover {
 .theme-footer-two {
   background: #001648;
   padding-top: 75px;
+  justify-content: center;
+  display: flex;
 }
 
 .theme-footer-two .logo-widget p {
@@ -2091,6 +2093,24 @@ body .theme-button-one:hover {
 
 .why-choose-us .wrapper {
   margin-top: 10px;
+}
+
+.why-choose-us {
+  display: flex;
+  align-items: center;
+}
+
+.why-choose-us .fa {
+  font-size: 4rem;
+  color: lightgray;
+  cursor: pointer;
+  padding: 10px !important;
+}
+.why-choose-us .fa:active {
+  color: #001a57;
+}
+.why-choose-us .fa:hover {
+  color: #001a57;
 }
 
 .why-choose-us .single-block h5 {

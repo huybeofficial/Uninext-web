@@ -247,32 +247,44 @@
 
 
         // -------------------------------  Core Value Slider
-        var rpSlider = $ (".core-value-slider");
-        if(rpSlider.length) {
-            rpSlider.owlCarousel({
-              loop:true,
-              nav: false,
-              dots:false,
-              autoplay:true,
-              margin:30,
-              minHeight:550,
-              autoplayTimeout:3500,
-              smartSpeed:1200,
-              autoplayHoverPause:true,
-              lazyLoad:true,
-              responsive:{
-                    0:{
-                        items:1
-                    },
-                    576:{
-                        items:2
-                    },
-                    992:{
-                        items:3
-                    }
-                },
+      $(document).ready(function () {
+        var rpSlider = $(".core-value-slider");
+        if (rpSlider.length) {
+          rpSlider.owlCarousel({
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            margin: 30,
+            minHeight: 550,
+            autoplayTimeout: 3000,
+            smartSpeed: 1400,
+            autoplayHoverPause: true,
+            lazyLoad: true,
+            responsive: {
+              0: {
+                items: 1
+              },
+              576: {
+                items: 2
+              },
+              992: {
+                items: 3
+              }
+            },
           })
+
+          // Add click event to the left button
+          $('.fa-angle-left').click(function () {
+            rpSlider.trigger('prev.owl.carousel');
+          });
+
+          // Add click event to the right button
+          $('.fa-angle-right').click(function () {
+            rpSlider.trigger('next.owl.carousel');
+          });
         }
+      });
 
 
         // -------------------------------  Related Post Slider

@@ -9,6 +9,22 @@
    
 */
 
+@media (min-width: 1400px) {
+  .why-choose-us .container {
+      margin: 0 20px 0 20px !important;
+    }
+.theme-footer-two {
+  padding: 2rem !important;
+}
+  .theme-footer-two .container {
+      justify-content: center;
+      max-width: 100% !important;
+  }
+}
+
+@media (max-width: 1400px) {
+}
+
 @media (min-width: 992px) {
   .footer-list {
       padding-left: 3rem !important;
@@ -157,6 +173,12 @@
   #theme-main-banner .camera_caption h1 {font-size: 50px;line-height: 60px;}
 }
 /*(min-width: 576px) and (max-width: 767px)*/
+
+@media (min-width: 576px){
+  .why-choose-us {
+      justify-content: center !important;
+    }
+}
 
 @media (max-width: 575px) {
   .theme-inner-banner .overlay h2 {font-size: 35px;}
