@@ -1725,7 +1725,7 @@ body .theme-button-one:hover {
 
 .callout-banner p {
   float: left;
-  color: #a9b3c8;
+  color: white;
   padding-left: 70px;
   width: 55%;
   position: relative;
@@ -1788,6 +1788,7 @@ body .theme-button-one:hover {
 }
 
 .our-solution .single-solution-block h5 {
+  font-weight: 700 !important;
   margin: 26px 0 10px 0;
 }
 
@@ -2111,12 +2112,12 @@ body .theme-button-one:hover {
 }
 
 .short-banner .overlay {
-  background: rgba(255, 255, 255, 0.4);
   padding: 52px 0;
   text-align: center;
 }
 
 .short-banner .overlay h2 {
+  color: white;
   font-size: 40px;
   line-height: 48px;
   width: 65%;
