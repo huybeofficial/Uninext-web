@@ -2105,7 +2105,10 @@ body .theme-button-one:hover {
   font-size: 4rem;
   color: lightgray;
   cursor: pointer;
-  padding: 10px !important;
+  align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 6rem 10px 0 10px;
 }
 .why-choose-us .fa:active {
   color: #001a57;
