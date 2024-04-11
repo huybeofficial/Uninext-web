@@ -1729,6 +1729,7 @@ body .theme-button-one:hover {
   float: left;
   color: white;
   padding-left: 70px;
+  line-height: 30px;
   width: 55%;
   position: relative;
 }
@@ -2476,6 +2477,10 @@ body .theme-button-one:hover {
 
 /*--------------------- Service Details ----------------------*/
 .service-details .service-content .cover-img {
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+.service-details .container .cover-img {
   border-radius: 5px;
   margin-bottom: 25px;
 }
