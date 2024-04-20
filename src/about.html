@@ -6,7 +6,7 @@
 	<!-- For IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- Thumbnail -->
-	<title>Thông tin về chúng tôi | Uninext</title>
+	<title data-i18n="title_page.about">Thông tin về chúng tôi | Uninext</title>
 	<meta property="og:title" content="Thông tin về chúng tôi | Uninext">
 	<meta property="og:site_name" content="Uninext">
 	<meta property="og:url" content="https://uninext.vn/about.html">
@@ -14,7 +14,7 @@
 		nghệ thông tin. Với đội ngũ nhân viên trẻ trung, năng động, được đào tạo bài bản, Uninext luôn nỗ lực mang đến cho
 		khách hàng những sản phẩm và dịch vụ chất lượng cao, đáp ứng nhu cầu của khách hàng.">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="https://uninext.vn/images/thumbnails/thumbnail-web.png">
+	<meta property="og:image" content="https://uninext.vn/images/thumbnails/thumbnail-web.webp">
 	<meta property="og:locale" content="vi" />
 	<!-- For Resposive Device -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,8 +27,9 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#061948">
 	
 	<!-- Favicon -->
-<link rel="icon" type="image/png" sizes="56x56" href="images/logo/uninext.png">
+<link rel="icon" type="image/webp" sizes="56x56" href="images/logo/uninext.webp">
 	<!-- Main style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- responsive style sheet -->
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
@@ -60,26 +61,20 @@
 			============================================== 
 			-->
 		<header class="header-two">
-
 			<div class="theme-menu-wrapper">
 				<div class="container">
 					<div class="bg-wrapper clearfix">
-						<div class="logo float-left"><a href="index.html"><img src="images/logo/Uninext logo rs.png"
-									alt=""></a>
-						</div>
-						<!-- ============== Menu Warpper ================ -->
-						<div class="menu-wrapper float-right">
+						<div class="logo"><a href="index.html"><img src="images/logo/Uninext logo rs.webp" alt=""></a></div>
+						<!-- ============== Menu Wrapper ================ -->
+						<div class="menu-wrapper float-left">
 							<nav id="mega-menu-holder" class="clearfix">
 								<ul class="clearfix">
-									<li><a href="index.html">Trang chủ</a>
-										<!-- <ul class="dropdown"> -->
-										<!-- <li><a href="index.html">Home version one</a></li> -->
-										<!-- <li><a href="index-2.html">Home version two</a></li> -->
-										<!-- </ul> -->
+									<li><a href="index.html" data-i18n="header.home">Trang chủ</a>
+		
 									</li>
-									<li class="active"><a href="#">Về Uninext</a>
-										<ul class="dropdown">
-											<li class="active bg-light"><a href="about.html">Thông tin công ty</a></li>
+									<li  class="active"><a href="about.html" data-i18n="header.about_uninext">Về Uninext</a>
+										<!-- <ul class="dropdown"> -->
+											<!-- <li  class="active"><a href="about.html" data-i18n="header.company_info">Thông tin công ty</a></li> -->
 											<!-- <li><a href="team.html">Đội ngũ phát triển</a></li> -->
 											<!-- <li><a href="faq.html">Faq's</a></li> -->
 											<!-- <li><a href="404.html">404</a></li> -->
@@ -89,42 +84,57 @@
 											<!-- <li><a href="#">Demo two</a></li> -->
 											<!-- </ul> -->
 											<!-- </li> -->
-										</ul>
+										<!-- </ul> -->
 									</li>
-									<li><a href="#">Dịch vụ</a>
+									<li><a href="product-service.html" data-i18n="header.services">Dịch vụ</a>
 										<ul class="dropdown">
 											<li><a href="product-service.html">Product</a></li>
 											<li><a href="offshore-service.html">Outsource</a></li>
 										</ul>
 									</li>
 									<!-- <li><a href="project.html">Dự án</a>
-										</li>
-										<li><a href="#">Tin tức</a>
-											<ul class="dropdown">
-												<li><a href="blog.html">Blog List</a></li>
-												<li><a href="blog-grid.html">Blog Grid</a></li>
-												<li><a href="blog-details.html">Blog details</a></li>
-											</ul>
-										</li> -->
-									<li><a href="contact.html">Liên hệ</a></li>
+											    </li>
+											    <li><a href="#">Tin tức</a>
+											    	<ul class="dropdown">
+											        	<li><a href="blog.html">Blog List</a></li>
+											        	<li><a href="blog-grid.html">Blog Grid</a></li>
+											        	<li><a href="blog-details.html">Blog details</a></li>
+											       </ul>
+											    </li> -->
+									<li><a href="contact.html" data-i18n="header.contact">Liên hệ</a></li>
 								</ul>
 							</nav> <!-- /#mega-menu-holder -->
 						</div> <!-- /.menu-wrapper -->
-						<div class="right-widget float-right" style="visibility: hidden;">
+						<div class="float-right right-widget">
 							<ul>
 								<li class="search-option">
 									<div class="dropdown">
-										<button type="button" class="dropdown-toggle" data-toggle="dropdown"><i
-												class="fa fa-search" aria-hidden="true"></i></button>
-										<form action="#" class="dropdown-menu">
-											<input type="text" Placeholder="Enter Your Search">
-											<button><i class="fa fa-search"></i></button>
-										</form>
+										<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+											<i class="fa" aria-hidden="true">
+												<img src="images/home/gb.webp" class="img-lang" alt="language"
+													title="Language" />
+											</i>
+										</button>
+										<ul class="dropdown-menu" id="language_switcher">
+											<li>
+												<button type="button" value="en"
+													class="hover flex-row d-flex align-items-center gap-1">
+													<img src="images/home/gb.webp" alt="language" title="Language" />
+													English
+												</button>
+											</li>
+											<li>
+												<button type="button" value="vi"
+													class=" flex-row d-flex align-items-center gap-1">
+													<img src="images/home/vi.webp" alt="language" title="Language" />
+													Vietnamese
+												</button>
+											</li>
+										</ul>
 									</div>
 								</li>
 							</ul>
-						</div> 
-						<!-- search -->
+						</div>
 					</div> <!-- /.bg-wrapper -->
 				</div> <!-- /.container -->
 			</div> <!-- /.theme-menu-wrapper -->
@@ -152,8 +162,8 @@
 			-->
 		<div class="callout-banner no-bg">
 			<div class="container clearfix">
-				<h2  style="font-size: 30px;" class="title">UNINEXT <br>Chìa khoá đưa bạn đến thành công</h2>
-				<p>Uninext là một công ty công nghệ chuyên cung cấp các giải pháp và dịch vụ công nghệ thông tin. Với
+				<h2  style="font-size: 30px;" class="title">UNINEXT <br> <i data-i18n="slogan">Chìa khoá đưa bạn đến thành công</i></h2>
+				<p data-i18n="about.slogan_about">Uninext là một công ty công nghệ chuyên cung cấp các giải pháp và dịch vụ công nghệ thông tin. Với
 					đội ngũ nhân viên trẻ trung, năng động, được đào tạo bài bản, Uninext luôn nỗ lực mang đến cho khách
 					hàng những sản phẩm và dịch vụ chất lượng cao, đáp ứng nhu cầu của khách hàng.</p>
 				<!-- <a href="#" class="theme-button-one">CONTACT US</a> -->
@@ -173,15 +183,15 @@
 					<div class="row">
 						<div class="col-lg-6 col-12 text order-lg-last">
 							<div class="theme-title-one">
-								<h2>LỊCH SỬ HÌNH THÀNH</h2>
+								<h2 data-i18n="about.history">LỊCH SỬ HÌNH THÀNH</h2>
 							</div> <!-- /.theme-title-one -->
-							<p>Bắt nguồn từ niềm đam mê công nghệ, một nhóm kỹ thuật viên dày dặn kinh nghiệm đã tập hợp lại với nhau. Họ nhận thấy
+							<p data-i18n="about.history_about">Bắt nguồn từ niềm đam mê công nghệ, một nhóm kỹ thuật viên dày dặn kinh nghiệm đã tập hợp lại với nhau. Họ nhận thấy
 								rõ
 								xu hướng phát triển bùng nổ của công nghệ số, đồng thời nhìn ra được tiềm năng của nó trong việc thúc đẩy nền kinh
 								tế
 								nói chung và hỗ trợ các doanh nghiệp nói riêng. Từ đó, cái tên Uninext ra đời.
 							</p>
-							<p>Với sự nghiên cứu kỹ lưỡng thị trường và tiếp thu ý kiến từ các garage uy tín tại Hà Nội, UniNext cho ra mắt sản phẩm
+							<p data-i18n="about.history_about2">Với sự nghiên cứu kỹ lưỡng thị trường và tiếp thu ý kiến từ các garage uy tín tại Hà Nội, UniNext cho ra mắt sản phẩm
 								đầu tay - phần mềm quản lý garage ô tô. "Đứa con đầu lòng" này nhanh chóng chiếm được lòng tin của nhiều garage,
 								khẳng
 								định vị thế của UniNext trên thị trường và trở thành bước đệm vững chắc cho những mục tiêu xa hơn. Với niềm tin và
@@ -193,7 +203,7 @@
 
 						</div> <!-- /.col- -->
 						<div class="col-lg-6 col-12 order-lg-first">
-							<img src="images/home/15.jpg" alt="" class="left-img">
+							<img src="images/home/15.webp" alt="" class="left-img">
 						</div>
 					</div> <!-- /.row -->
 				</div> <!-- /.container -->
@@ -211,80 +221,97 @@
 		
 			<div class="container">
 				<div class="theme-title-one">
-					<h2>VÌ SAO NÊN CHỌN UNINEXT?</h2>
+					<h2 data-i18n="content.why_choose_us">VÌ SAO NÊN CHỌN UNINEXT?</h2>
 				</div> <!-- /.theme-title-one -->
 				<div>
-				<div class="wrapper" style="margin-top:50px;">
-					<div class="core-value-slider">
-						<div class="item" style="margin-right: 20px;">
-							<div class="image-box">
-							</div>
-							<div class="flex-col d-flex gap-4 text">
-								<i style="font-size: 60px; color: #001a57;" class="flaticon-presentation"></i>
-								<div>
-									<h5 style="font-weight: 700; font-size: 1.3rem;">Chất lượng dịch vụ hoàn hảo</a></h5>
-									<p>Chúng tôi cam kết mọi sản phẩm/dịch vụ mà Uninext cung cấp đều đạt tiêu chuẩn,
-										đáp ứng mọi yêu cầu mà
-										khách hàng đã đề
-										ra với chất lượng tốt nhất, phù hợp với nhu cầu cụ thể của từng doanh nghiệp/cá
-										nhân.</p>
+					<div class="wrapper" style="margin-top:50px;">
+						<div class="core-value-slider">
+							<div class="item" style="margin-right: 20px;">
+								<div class="image-box">
 								</div>
-							</div> <!-- /.text -->
-						</div> <!-- /.col- -->
+								<div class="flex-col d-flex gap-4 text">
+									<i style="font-size: 60px; color: #001a57;" class="flaticon-presentation"></i>
+									<div>
+										<h5 style="font-weight: 700; font-size: 1.3rem;" data-i18n="content.good_service">Chất
+											lượng dịch vụ hoàn hảo</a>
+										</h5>
+										<p data-i18n="content.good_service_detail">Chúng tôi cam kết mọi sản phẩm/dịch vụ mà
+											Uninext cung cấp đều đạt tiêu
+											chuẩn,
+											đáp ứng mọi yêu cầu mà
+											khách hàng đã đề
+											ra với chất lượng tốt nhất, phù hợp với nhu cầu cụ thể của từng doanh
+											nghiệp/cá
+											nhân.</p>
+									</div>
+								</div> <!-- /.text -->
+							</div> <!-- /.col- -->
 		
-						<div class="item" style="margin-right: 20px;">
-							<div class="image-box">
-							</div>
-							<div class="flex-col d-flex gap-4 text">
-								<img src="images/icon/tabler_pig-money.svg" style="width: 70px; height: 70px; margin-top: 10px" alt="">
-								<div>
-									<h5 style="font-weight: 700; font-size: 1.3rem;">Giá cả</h5>
-									<p>Uninext mang đến dịch vụ phù hợp với tài chính của từng khách hàng, cung cấp đa
-										dạng các gói dịch vụ với mức giá cạnh
-										tranh, đảm bảo mọi khách hàng đều có thể tiếp cận được dịch vụ chất lượng cao.
-									</p>
+							<div class="item" style="margin-right: 20px;">
+								<div class="image-box">
 								</div>
-							</div> <!-- /.text -->
-						</div> <!-- /.col- -->
+								<div class="flex-col d-flex gap-4 text">
+									<img src="images/icon/tabler_pig-money.svg"
+										style="width: 70px; height: 70px; margin-top: 10px" alt="">
+									<div>
+										<h5 style="font-weight: 700; font-size: 1.3rem;" data-i18n="content.good_price">Giá cả
+										</h5>
+										<p data-i18n="content.good_price_detail">Uninext mang đến dịch vụ phù hợp với tài chính
+											của từng khách hàng, cung cấp
+											đa
+											dạng các gói dịch vụ với mức giá cạnh
+											tranh, đảm bảo mọi khách hàng đều có thể tiếp cận được dịch vụ chất lượng
+											cao.
+										</p>
+									</div>
+								</div> <!-- /.text -->
+							</div> <!-- /.col- -->
 		
-						<div class="item" style="margin-right: 20px;">
-							<div class="image-box">
-							</div>
-							<div class="flex-col d-flex gap-4 text">
-								<i style="font-size: 60px; color: #001a57;" class="flaticon-people"></i>
-								<div>
-									<h5 style="font-weight: 700; font-size: 1.3rem;">Đội ngũ chuyên nghiệp</h5>
-									<p>Uninext sở hữu đội ngũ nhân viên chuyên nghiệp, giàu kinh nghiệm và nhiệt huyết
-										trong lĩnh vực. Chúng tôi luôn cập nhật
-										kiến thức mới nhất và không ngừng nâng cao tay nghề để mang đến cho khách hàng
-										dịch vụ tốt nhất.</p>
+							<div class="item" style="margin-right: 20px;">
+								<div class="image-box">
 								</div>
-							</div> <!-- /.text -->
-						</div> <!-- /.col- -->
+								<div class="flex-col d-flex gap-4 text">
+									<i style="font-size: 60px; color: #001a57;" class="flaticon-people"></i>
+									<div>
+										<h5 style="font-weight: 700; font-size: 1.3rem;" data-i18n="content.good_team">Đội ngũ
+											chuyên nghiệp</h5>
+										<p data-i18n="content.good_team_detail">Uninext sở hữu đội ngũ nhân viên chuyên nghiệp,
+											giàu kinh nghiệm và nhiệt
+											huyết
+											trong lĩnh vực. Chúng tôi luôn cập nhật
+											kiến thức mới nhất và không ngừng nâng cao tay nghề để mang đến cho khách
+											hàng
+											dịch vụ tốt nhất.</p>
+									</div>
+								</div> <!-- /.text -->
+							</div> <!-- /.col- -->
 		
-						<div class="item" style="margin-right: 20px;">
-							<div class="image-box">
-							</div>
-							<div class="flex-col d-flex gap-4 text">
-								<i style="font-size: 60px; color: #001a57;" class="flaticon-puzzle"></i>
-								<div>
-									<h5 style="font-weight: 700; font-size: 1.3rem;">Chăm sóc khách hàng</h5>
-									<p>Với Uninext, khách hàng luôn là trung tâm của mọi hoạt động và quyết định của
-										mình, với đội ngũ nhân viên
-										chuyên nghiệp,
-										nhiệt tình sẵn sàng hỗ trợ khách hàng 24/7 để giải đáp mọi thắc mắc của khách
-										hàng, xử lý mọi vấn đề phát
-										sinh nhanh
-										chóng, triệt để.</p>
+							<div class="item" style="margin-right: 20px;">
+								<div class="image-box">
 								</div>
-							</div> <!-- /.text -->
-						</div> <!-- /.col- -->
+								<div class="flex-col d-flex gap-4 text">
+									<i style="font-size: 60px; color: #001a57;" class="flaticon-puzzle"></i>
+									<div>
+										<h5 style="font-weight: 700; font-size: 1.3rem;" data-i18n="content.good_support">Chăm
+											sóc khách hàng</h5>
+										<p data-i18n="content.good_support_detail">Với Uninext, khách hàng luôn là trung tâm của
+											mọi hoạt động và quyết định của
+											mình, với đội ngũ nhân viên
+											chuyên nghiệp,
+											nhiệt tình sẵn sàng hỗ trợ khách hàng 24/7 để giải đáp mọi thắc mắc của
+											khách
+											hàng, xử lý mọi vấn đề phát
+											sinh nhanh
+											chóng, triệt để.</p>
+									</div>
+								</div> <!-- /.text -->
+							</div> <!-- /.col- -->
 		
-					</div> <!-- /.core-value-slider -->
-				</div> <!-- /.wrapper -->
-			</div>
-		</div> <!-- /.container -->
-		<i class="fa fa-angle-right" aria-hidden="true"></i>
+						</div> <!-- /.core-value-slider -->
+					</div> <!-- /.wrapper -->
+				</div>
+			</div> <!-- /.container -->
+			<i class="fa fa-angle-right" aria-hidden="true"></i>
 		</div> <!-- /.why-choose-us -->
 
 		<!--
@@ -301,21 +328,21 @@
 								<div class="single-counter-box">
 									<div class="number"><span class="timer" data-from="0" data-to="30" data-speed="1200"
 											data-refresh-interval="5">0</span>+</div>
-									<p>Khách hàng</p>
+									<p data-i18n="about.customer">Khách hàng</p>
 								</div> <!-- /.single-counter-box -->
 							</div> <!-- /.col- -->
 							<div class="col-md-4 col-6">
 								<div class="single-counter-box">
 									<div class="number"><span class="timer" data-from="0" data-to="100"
 											data-speed="1200" data-refresh-interval="5">0</span>+</div>
-									<p>Dự án</p>
+									<p data-i18n="about.project">Dự án</p>
 								</div> <!-- /.single-counter-box -->
 							</div> <!-- /.col- -->
 							<div class="col-md-4 col-6">
 								<div class="single-counter-box">
 									<div class="number"><span class="timer" data-from="0" data-to="30" data-speed="1200"
 											data-refresh-interval="5">0</span>+</div>
-									<p>Nhân sự</p>
+									<p data-i18n="about.employee">Nhân sự</p>
 								</div> <!-- /.single-counter-box -->
 							</div> <!-- /.col- -->
 						</div> <!-- /.row -->
@@ -330,78 +357,81 @@
 				Footer
 			=====================================================
 			-->
-		<footer class="theme-footer-two">
-			<div class="top-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 col-12 logo-widget">
-							<div class="logo"><a href="index.html"><img style="width: 300px;"
-										src="images/logo/Uninext_white.png" alt=""></a></div>
-							<p>Uninext là một công ty công nghệ chuyên cung cấp các giải pháp và dịch vụ công nghệ thông
-								tin.
-								Chúng tôi tin rằng, công nghệ là chìa khóa để doanh nghiệp phát triển bền vững. <br>
-								Uninext
-								mong muốn trở thành người đồng hành tin cậy của các bạn trong hành trình chuyển đổi số.
-								Chúng
-								tôi sẽ cùng bạn xây dựng một doanh nghiệp hiện đại, năng động và hiệu quả hơn.</p>
-		
-						</div> <!-- /.logo-widget -->
-						<div class="col-lg-2 col-12 footer-list">
-							<h6 class="title">Khám phá</h6>
-							<ul>
-								<li><a href="about.html">Về Uninext</a></li>
-		
-								<li><a href="index.html#our-case">Lĩnh vực</a></li>
-								<li><a href="index.html#our-solution">Dịch vụ cung cấp</a></li>
-								<li><a href="contact.html">Liên hệ với chúng tôi</a></li>
-							</ul>
-						</div> <!-- /.footer-list -->
-		
-						<div class="col-lg-3 col-12  footer-list">
-							<h6 class="title">Sản phẩm</h6>
-							<ul>
-								<li><a href="product-service.html#Carnext">Phần mềm Carnext</a></li>
-								<li><a href="product-service.html#Carinfo">Phần mềm Carinfo</a></li>
-								<li><a href="offshore-service.html#PCCC">Ứng dụng quản lý thiết bị PCCC</a></li>
-							</ul>
-						</div> <!-- /.footer-gallery -->
-		
-						<div class="col-lg-3 col-12 contact-widget">
-							<h6 class="title">Thông tin liên hệ</h6>
-							<ul>
-								<li>
-									<i class="flaticon-direction-signs"></i>
-									<a target="_blank" href="http://maps.google.com/?q=Số nhà 34, ngõ 5, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, thành phố
-												Hà Nội, Việt Nam">
-										Số nhà 34, ngõ 5, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, thành
-										phố
-										Hà Nội, Việt Nam
-									</a>
-		
-								</li>
-								<li>
-									<i class="flaticon-multimedia-1"></i>
-									<a href="mailto:info@uninext.vn">info@uninext.vn</a>
-								</li>
-								<li>
-									<i class="fa fa-phone" aria-hidden="true"></i>
-									<a href="tel:0397 985 866">0397 985 866</a>
-								</li>
-								<li>
-									<i class="fa fa-facebook" aria-hidden="true"></i>
-									<a href="https://www.facebook.com/uninextvn">Uninext</a>
-								</li>
-							</ul>
-						</div> <!-- /.contact-widget -->
-					</div> <!-- /.row -->
-				</div> <!-- /.container -->
-			</div> <!-- /.top-footer -->
-			<!-- <div class="bottom-footer">
-											<div class="container">
-												<p>&copy; Copyrights 2023. All Rights Reserved.</p>
-											</div>
-										</div> /.bottom-footer -->
-		</footer> <!-- /.theme-footer-two -->
+<footer class="theme-footer-two">
+	<div class="top-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-12 logo-widget">
+					<div class="logo"><a href="index.html"><img style="width: 300px;"
+								src="images/logo/Uninext_white.webp" alt=""></a></div>
+					<p data-i18n="footer.about_us">Uninext là một công ty công nghệ chuyên cung cấp các giải pháp và
+						dịch vụ công nghệ thông
+						tin.
+						Chúng tôi tin rằng, công nghệ là chìa khóa để doanh nghiệp phát triển bền vững.</p>
+					<p data-i18n="footer.about_us2">
+						Uninext
+						mong muốn trở thành người đồng hành tin cậy của các bạn trong hành trình chuyển đổi số.
+						Chúng
+						tôi sẽ cùng bạn xây dựng một doanh nghiệp hiện đại, năng động và hiệu quả hơn.</p>
+
+				</div> <!-- /.logo-widget -->
+				<div class="col-lg-2 col-12 footer-list">
+					<h6 class="title" data-i18n="footer.explore">Khám phá</h6>
+					<ul>
+						<li><a href="about.html" data-i18n="footer.about">Về Uninext</a></li>
+
+						<li><a href="index.html#our-case" data-i18n="footer.field">Lĩnh vực</a></li>
+						<li><a href="index.html#our-solution" data-i18n="footer.service">Dịch vụ cung cấp</a></li>
+						<li><a href="contact.html" data-i18n="footer.contact">Liên hệ với chúng tôi</a></li>
+					</ul>
+				</div> <!-- /.footer-list -->
+
+				<div class="col-lg-3 col-12  footer-list">
+					<h6 class="title" data-i18n="footer.product">Sản phẩm</h6>
+					<ul>
+						<li><a href="product-service.html#Carnext" data-i18n="footer.carnext">Phần mềm Carnext</a></li>
+						<li><a href="product-service.html#Carinfo" data-i18n="footer.carinfo">Phần mềm Carinfo</a></li>
+						<li><a href="offshore-service.html#PCCC" data-i18n="footer.pccc">Ứng dụng quản lý thiết bị
+								PCCC</a></li>
+					</ul>
+				</div> <!-- /.footer-gallery -->
+
+				<div class="col-lg-3 col-12 contact-widget">
+					<h6 class="title" data-i18n="footer.contact_infor">Thông tin liên hệ</h6>
+					<ul>
+						<li>
+							<i class="flaticon-direction-signs"></i>
+							<a target="_blank" href="http://maps.google.com/?q=Số nhà 34, ngõ 5, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, thành phố
+										Hà Nội, Việt Nam" data-i18n="footer.contact_infor_detail">
+								Số nhà 34, ngõ 5, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, thành
+								phố
+								Hà Nội, Việt Nam
+							</a>
+
+						</li>
+						<li>
+							<i class="flaticon-multimedia-1"></i>
+							<a href="mailto:info@uninext.vn">info@uninext.vn</a>
+						</li>
+						<li>
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<a href="tel:0397 985 866" data-i18n="footer.phone">0397 985 866</a>
+						</li>
+						<li>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<a href="https://www.facebook.com/uninextvn">Uninext</a>
+						</li>
+					</ul>
+				</div> <!-- /.contact-widget -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</div> <!-- /.top-footer -->
+	<!-- <div class="bottom-footer">
+									<div class="container">
+										<p>&copy; Copyrights 2023. All Rights Reserved.</p>
+									</div>
+								</div> /.bottom-footer -->
+</footer> <!-- /.theme-footer-two -->
 
 
 

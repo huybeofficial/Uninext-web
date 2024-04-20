@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dịch vụ Outsource | Uninext</title>
+    <title data-i18n="title_page.outsource_service">Dịch vụ Outsource | Uninext</title>
 
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
         <meta property="og:url" content="https://uninext.vn/offshore-service.html">
         <meta property="og:description" content="Phát triển off-shore là hình thức thuê ngoài (outsourcing) một phần hoặc toàn bộ hoạt động phát triển phần mềm, website hoặc hệ thống thông tin cho các công ty ở nước ngoài.">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://uninext.vn/images/thumbnails/thumbnail-web.png">
+        <meta property="og:image" content="https://uninext.vn/images/thumbnails/thumbnail-web.webp">
         <meta property="og:locale" content="vi" />
     <!-- For Resposive Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,7 +25,7 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#061948">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="56x56" href="images/logo/uninext.png">
+    <link rel="icon" type="image/webp" sizes="56x56" href="images/logo/uninext.webp">
     <!-- Main style sheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/services.css">
@@ -59,23 +59,21 @@
 			============================================== 
 			-->
         <header class="header-two">
-
             <div class="theme-menu-wrapper">
                 <div class="container">
                     <div class="bg-wrapper clearfix">
-                        <div class="logo float-left"><a href="index.html"><img src="images/logo/Uninext logo rs.png"
-                                    alt=""></a>
-                        </div>
-                        <!-- ============== Menu Warpper ================ -->
-                        <div class="menu-wrapper float-right">
+                        <div class="logo"><a href="index.html"><img src="images/logo/Uninext logo rs.webp" alt=""></a></div>
+                        <!-- ============== Menu Wrapper ================ -->
+                        <div class="menu-wrapper float-left">
                             <nav id="mega-menu-holder" class="clearfix">
                                 <ul class="clearfix">
-                                    <li><a href="index.html">Trang chủ</a>
-
+                                    <li><a href="index.html" data-i18n="header.home">Trang chủ</a>
+        
                                     </li>
-                                    <li><a href="#">Về Uninext</a>
-                                        <ul class="dropdown">
-                                            <li><a href="about.html">Thông tin công ty</a></li>
+                                    <li><a href="about.html" data-i18n="header.about_uninext">Về Uninext</a>
+                                        <!-- <ul class="dropdown">
+                                            <li><a href="about.html" data-i18n="header.company_info">Thông tin
+                                                    công ty</a></li> -->
                                             <!-- <li><a href="team.html">Đội ngũ phát triển</a></li> -->
                                             <!-- <li><a href="faq.html">Faq's</a></li> -->
                                             <!-- <li><a href="404.html">404</a></li> -->
@@ -85,43 +83,57 @@
                                             <!-- <li><a href="#">Demo two</a></li> -->
                                             <!-- </ul> -->
                                             <!-- </li> -->
-                                        </ul>
+                                        <!-- </ul> -->
                                     </li>
-                                    <li class="active"><a href="#">Dịch vụ</a>
+                                    <li  class="active"><a href="product-service.html" data-i18n="header.services">Dịch vụ</a>
                                         <ul class="dropdown">
                                             <li><a href="product-service.html">Product</a></li>
-                                            <li class="bg-light"><a href="offshore-service.html">Outsource</a></li>
+                                            <li  class="bg-light"><a href="offshore-service.html">Outsource</a></li>
                                         </ul>
                                     </li>
                                     <!-- <li><a href="project.html">Dự án</a>
-												    </li>
-												    <li><a href="#">Tin tức</a>
-												    	<ul class="dropdown">
-												        	<li><a href="blog.html">Blog List</a></li>
-												        	<li><a href="blog-grid.html">Blog Grid</a></li>
-												        	<li><a href="blog-details.html">Blog details</a></li>
-												       </ul>
-												    </li> -->
-                                    <li><a href="contact.html">Liên hệ</a></li>
+        															    </li>
+        															    <li><a href="#">Tin tức</a>
+        															    	<ul class="dropdown">
+        															        	<li><a href="blog.html">Blog List</a></li>
+        															        	<li><a href="blog-grid.html">Blog Grid</a></li>
+        															        	<li><a href="blog-details.html">Blog details</a></li>
+        															       </ul>
+        															    </li> -->
+                                    <li><a href="contact.html" data-i18n="header.contact">Liên hệ</a></li>
                                 </ul>
                             </nav> <!-- /#mega-menu-holder -->
                         </div> <!-- /.menu-wrapper -->
-                        <div class="right-widget float-right" style="visibility: hidden;">
-							<ul>
-								<li class="search-option">
-									<div class="dropdown">
-										<button type="button" class="dropdown-toggle" data-toggle="dropdown"><i
-												class="fa fa-search" aria-hidden="true"></i></button>
-										<form action="#" class="dropdown-menu">
-											<input type="text" Placeholder="Enter Your Search">
-											<button><i class="fa fa-search"></i></button>
-										</form>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<!-- search
-						<!-- search -->
+                        <div class="float-right right-widget">
+                            <ul>
+                                <li class="search-option">
+                                    <div class="dropdown">
+                                        <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa" aria-hidden="true">
+                                                <img src="images/home/gb.webp" class="img-lang" alt="language"
+                                                    title="Language" />
+                                            </i>
+                                        </button>
+                                        <ul class="dropdown-menu" id="language_switcher">
+                                            <li>
+                                                <button type="button" value="en"
+                                                    class="hover flex-row d-flex align-items-center gap-1">
+                                                    <img src="images/home/gb.webp" alt="language" title="Language" />
+                                                    English
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="vi"
+                                                    class=" flex-row d-flex align-items-center gap-1">
+                                                    <img src="images/home/vi.webp" alt="language" title="Language" />
+                                                    Vietnamese
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div> <!-- /.bg-wrapper -->
                 </div> <!-- /.container -->
             </div> <!-- /.theme-menu-wrapper -->
@@ -152,19 +164,22 @@
                 <div class="row">
                     <div class="col-xl-9 col-lg-8 col-12">
                         <div class="service-content">
-                            <img src="images/home/20.jpg" alt="" class="cover-img">
-                            <h3 class="main-title">Giới thiệu dịch vụ</h3>
+                            <img src="images/home/20.webp" alt="" class="cover-img">
+                            <h3 data-i18n="outsource_service.introduce" class="main-title">Giới thiệu dịch vụ</h3>
+                            <p data-i18n="outsource_service.introduce_detail">
                             Phát triển off-shore là hình thức thuê ngoài (outsourcing) một phần hoặc toàn bộ hoạt động
-                            phát triển phần mềm, website hoặc hệ thống thông tin cho các công ty ở nước ngoài.<br>
-                            Các công ty off-shore thường có chi phí nhân công thấp hơn so với các nước phát triển, do
-                            đó, việc phát triển off-shore có thể giúp bạn tiết kiệm chi phí.
+                            phát triển phần mềm, website hoặc hệ thống thông tin cho các công ty ở nước ngoài.
+                            </p>
+                            <p data-i18n="outsource_service.introduce_detail2">Các công ty off-shore thường có chi phí nhân công thấp hơn so với các nước phát triển, do
+                            đó, việc phát triển off-shore có thể giúp bạn tiết kiệm chi phí.</p>
+                            
                         </div> <!-- /.service-content -->
                     </div> <!-- /.col- -->
 
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8 col-12 theme-sidebar-one mt-5 ">
                         <div class="sidebar-box service-categories">
                             <ul style="list-style: none;">
-                                <li class="hover"><a href="contact.html">Liên hệ với chúng tôi</a></li>
+                                <li class="hover"><a data-i18n="outsource_service.contact_us" href="contact.html">Liên hệ với chúng tôi</a></li>
                                 <li class="hover"><a href="product-service.html">Products</a></li>
                             </ul>
                         </div> <!-- /.service-categories -->
@@ -178,16 +193,16 @@
             <div class="container">
                 <div class="row">
                     <div class="order-xl-1 col-lg-5 col-12 theme-sidebar-one">
-                        <img src="images/services/image-0.png" alt="" class="cover-img">
+                        <img src="images/services/image-0.webp" alt="" class="cover-img">
         
         
                     </div> <!-- /.theme-sidebar-one -->
         
                     <div id="PCCC" class="order-xl-2 col-lg-7 col-12 mt-5">
                         <div class="service-content">
-                            <h2 class="main-title">Phát triển Ứng dụng quản lý thiết bị PCCC</h2>
-                            <p>UniNext cung cấp giải pháp giúp các doanh nghiệp/tổ chức quản lý hiệu quả các thiết bị phòng cháy chữa cháy của mình.</p>
-                            <p>Ứng dụng được thiết kế để đáp ứng nhu cầu đa dạng của khách hàng, từ theo dõi tình trạng hoạt động, lịch sử bảo trì,
+                            <h2 data-i18n="outsource_service.fire_protection.title" class="main-title">Phát triển Ứng dụng quản lý thiết bị PCCC</h2>
+                            <p data-i18n="outsource_service.fire_protection.content">UniNext cung cấp giải pháp giúp các doanh nghiệp/tổ chức quản lý hiệu quả các thiết bị phòng cháy chữa cháy của mình.</p>
+                            <p data-i18n="outsource_service.fire_protection.content2">Ứng dụng được thiết kế để đáp ứng nhu cầu đa dạng của khách hàng, từ theo dõi tình trạng hoạt động, lịch sử bảo trì,
                             quản lý kiểm kê thiết bị đến lập kế hoạch kiểm tra định kỳ, đảm bảo an toàn PCCC.</p>
                         </div> <!-- /.service-content -->
                     </div> <!-- /.col- -->
@@ -201,18 +216,18 @@
                 <div class="row">
 
                     <div class="order-xl-2 col-lg-5 col-12 theme-sidebar-one">
-                        <img src="images/services/image-1.png" alt="" class="cover-img">
+                        <img src="images/services/image-1.webp" alt="" class="cover-img">
                     
                     
                     </div> <!-- /.theme-sidebar-one -->
 
                     <div class="order-xl-1 col-lg-7 col-12 mt-5">
                         <div class="service-content">
-                            <h2 class="main-title">Phát triển Mobile</h2>
-                            <p>Chúng tôi cung cấp dịch vụ phát triển ứng dụng di động đa nền tảng cho iOS và Android,
+                            <h2 data-i18n="outsource_service.mobile_dev.title" class="main-title">Phát triển Mobile</h2>
+                            <p data-i18n="outsource_service.mobile_dev.content">Chúng tôi cung cấp dịch vụ phát triển ứng dụng di động đa nền tảng cho iOS và Android,
                                 giúp bạn tiếp cận lượng lớn người
                                 dùng trên các thiết bị khác nhau.</p>
-                            <p>Uninext có đội ngũ kỹ sư giàu kinh nghiệm và am hiểu các công nghệ mới nhất, đảm bảo tạo
+                            <p data-i18n="outsource_service.mobile_dev.content2">Uninext có đội ngũ kỹ sư giàu kinh nghiệm và am hiểu các công nghệ mới nhất, đảm bảo tạo
                                 ra các ứng dụng di động chất
                                 lượng cao, đáp ứng đầy đủ nhu cầu của bạn.</p>
                         </div> <!-- /.service-content -->
@@ -227,17 +242,17 @@
             <div class="container">
                 <div class="row">
                     <div class="order-xl-1 col-lg-5 col-12 theme-sidebar-one">
-                        <img src="images/services/image-2.png" alt="" class="cover-img">
+                        <img src="images/services/image-2.webp" alt="" class="cover-img">
 
 
                     </div> <!-- /.theme-sidebar-one -->
 
                     <div class="order-xl-2 col-lg-7 col-12 mt-5">
                         <div class="service-content">
-                            <h2 class="main-title">Phát triển Web</h2>
-                            <p>Uninext mang đến dịch vụ phát triển website chuyên nghiệp, đáp ứng mọi nhu cầu của bạn.
+                            <h2 data-i18n="outsource_service.web_dev.title" class="main-title">Phát triển Web</h2>
+                            <p data-i18n="outsource_service.web_dev.content">Uninext mang đến dịch vụ phát triển website chuyên nghiệp, đáp ứng mọi nhu cầu của bạn.
                             </p>
-                            <p>Website của bạn sẽ sở hữu đầy đủ tính năng cần thiết, giao diện bắt mắt và thu hút, được
+                            <p data-i18n="outsource_service.web_dev.content2">Website của bạn sẽ sở hữu đầy đủ tính năng cần thiết, giao diện bắt mắt và thu hút, được
                                 xây dựng dựa trên các công nghệ
                                 web tiên tiến nhất. Nhờ vậy, website luôn hoạt động ổn định, bảo mật cao và dễ dàng quản
                                 lý.</p>
@@ -253,16 +268,16 @@
                 <div class="row">
                     
                     <div class="order-xl-2 col-lg-5 col-12 theme-sidebar-one">
-                        <img src="images/services/image-3.png" alt="" class="cover-img">                       
+                        <img src="images/services/image-3.webp" alt="" class="cover-img">                       
                     </div> <!-- /.theme-sidebar-one -->
 
                     <div class="order-xl-1 col-lg-7 col-12 mt-5">
                         <div class="service-content">
-                            <h2 class="main-title">Giải pháp phần mềm</h2>
-                            <p>UniNext cung cấp dịch vụ phát triển phần mềm quản lý cho các doanh nghiệp, giúp bạn tự
+                            <h2 data-i18n="outsource_service.solution.title" class="main-title">Giải pháp phần mềm</h2>
+                            <p data-i18n="outsource_service.solution.content">UniNext cung cấp dịch vụ phát triển phần mềm quản lý cho các doanh nghiệp, giúp bạn tự
                                 động hóa các quy trình, nâng cao
                                 hiệu quả hoạt động và tăng lợi nhuận.</p>
-                            <p>Giải pháp phần mềm được thiết kế riêng theo nhu cầu của từng doanh nghiệp sẽ giúp bạn tối
+                            <p data-i18n="outsource_service.solution.content2">Giải pháp phần mềm được thiết kế riêng theo nhu cầu của từng doanh nghiệp sẽ giúp bạn tối
                                 ưu hóa quy trình làm việc,
                                 tiết kiệm thời gian và chi phí.</p>
                         </div> <!-- /.service-content -->
@@ -275,15 +290,15 @@
             <div class="container">
                 <div class="row">
                     <div class="order-xl-1 col-lg-5 col-12 theme-sidebar-one">
-                        <img src="images/services/image-4.png" alt="" class="cover-img">
+                        <img src="images/services/image-4.webp" alt="" class="cover-img">
 
 
                     </div> <!-- /.theme-sidebar-one -->
 
                     <div class="order-xl-2 col-lg-7 col-12 mt-5">
                         <div class="service-content">
-                            <h2 class="main-title">Tư vấn CNTT</h2>
-                            <p>Nhờ sở hữu đội ngũ tư vấn dày dặn kinh nghiệm cùng chuyên gia trong ngành, UniNext tự tin
+                            <h2 data-i18n="outsource_service.IT_consultant.title" class="main-title">Tư vấn CNTT</h2>
+                            <p data-i18n="outsource_service.IT_consultant.content">Nhờ sở hữu đội ngũ tư vấn dày dặn kinh nghiệm cùng chuyên gia trong ngành, UniNext tự tin
                                 mang đến cho quý khách hàng
                                 dịch vụ tư vấn toàn diện về chuyển đổi số, phát triển và vận hành hệ thống, cũng như
                                 thiết kế hệ thống cho nhiều lĩnh
@@ -298,7 +313,7 @@
         <div class="our-case section-spacing">
             <div class="container">
                 <div class="theme-title-one">
-                    <h2>Tại sao chọn UniNext cho dự án phát triển Offshore?</h2>
+                    <h2 data-i18n="outsource_service.why_choose.title">Tại sao chọn UniNext cho dự án phát triển Offshore?</h2>
                 </div> <!-- /.theme-title-one -->
                 <div class="wrapper">
                     <div class="row mt-5">
@@ -306,9 +321,9 @@
                             <div class="div-wrapper">
                                 <div class="d-flex">
                                     <img src="images/services/iconoir_developer.svg" alt="" class="img-border">
-                                    <h4 class="mt-3 ms-2" style="font-weight: 700;">Đội ngũ chuyên môn có năng lực</h4>
+                                    <h4 data-i18n="outsource_service.why_choose.content.team.title" class="mt-3 ms-2" style="font-weight: 700;">Đội ngũ chuyên môn có năng lực</h4>
                                 </div>
-                                <p class="mt-3">100% đội ngũ nhân viên tốt nghiệp từ các trường đại học, Đội ngũ được
+                                <p data-i18n="outsource_service.why_choose.content.team.content" class="mt-3">100% đội ngũ nhân viên tốt nghiệp từ các trường đại học, Đội ngũ được
                                     đào tạo bài bản và thường
                                     xuyên cập nhật các công
                                     nghệ mới nhất, đảm bảo đáp ứng mọi yêu cầu của khách hàng.</p>
@@ -318,12 +333,12 @@
                             <div class="div-wrapper">
                                 <div class="d-flex">
                                     <img src="images/services/iconamoon_like-light.svg" alt="" class="img-border">
-                                    <h4 class="mt-3 ms-2" style="font-weight: 700;">Chất lượng</h4>
+                                    <h4 data-i18n="outsource_service.why_choose.content.quality.title" class="mt-3 ms-2" style="font-weight: 700;">Chất lượng</h4>
                                 </div>
-                                <p class="mt-3">UniNext luôn cam kết mang đến cho khách hàng những dự án chất lượng cao
+                                <p data-i18n="outsource_service.why_choose.content.quality.content" class="mt-3">UniNext luôn cam kết mang đến cho khách hàng những dự án chất lượng cao
                                     nhất, đáp ứng các tiêu chuẩn quốc tế và phù hợp
                                     với nhu cầu thực tế.</p>
-                                <p>Quy trình quản lý dự án bài bản, chặt chẽ, đảm bảo theo dõi sát sao tiến độ, kiểm
+                                <p data-i18n="outsource_service.why_choose.content.quality.content2">Quy trình quản lý dự án bài bản, chặt chẽ, đảm bảo theo dõi sát sao tiến độ, kiểm
                                     soát chất lượng đầu ra và tối ưu hóa
                                     hiệu quả hoạt động.</p>
                             </div>
@@ -332,12 +347,12 @@
                             <div class="div-wrapper">
                                 <div class="d-flex">
                                     <img src="images/services/carbon_time.svg" alt="" class="img-border">
-                                    <h4 class="mt-3 ms-2" style="font-weight: 700;">Tốc độ phát triển nhanh chóng</h4>
+                                    <h4 data-i18n="outsource_service.why_choose.content.speed.title" class="mt-3 ms-2" style="font-weight: 700;">Tốc độ phát triển nhanh chóng</h4>
                                 </div>
-                                <p class="mt-3">UniNext áp dụng quy trình làm việc khoa học, tối ưu hóa thời gian và
+                                <p data-i18n="outsource_service.why_choose.content.speed.content" class="mt-3">UniNext áp dụng quy trình làm việc khoa học, tối ưu hóa thời gian và
                                     nguồn lực, giúp đẩy nhanh tiến độ dự án mà vẫn đảm
                                     bảo chất lượng.</p>
-                                <p>Linh hoạt trong việc điều chỉnh quy trình và phương pháp làm việc để phù hợp với yêu
+                                <p data-i18n="outsource_service.why_choose.content.speed.content2">Linh hoạt trong việc điều chỉnh quy trình và phương pháp làm việc để phù hợp với yêu
                                     cầu cụ thể của từng dự án.</p>
                             </div>
                         </div> <!-- /.col- -->
@@ -357,10 +372,12 @@
                     <div class="row">
                         <div class="col-lg-4 col-12 logo-widget">
                             <div class="logo"><a href="index.html"><img style="width: 300px;"
-                                        src="images/logo/Uninext_white.png" alt=""></a></div>
-                            <p>Uninext là một công ty công nghệ chuyên cung cấp các giải pháp và dịch vụ công nghệ thông
+                                        src="images/logo/Uninext_white.webp" alt=""></a></div>
+                            <p data-i18n="footer.about_us">Uninext là một công ty công nghệ chuyên cung cấp các giải pháp và
+                                dịch vụ công nghệ thông
                                 tin.
-                                Chúng tôi tin rằng, công nghệ là chìa khóa để doanh nghiệp phát triển bền vững. <br>
+                                Chúng tôi tin rằng, công nghệ là chìa khóa để doanh nghiệp phát triển bền vững.</p>
+                            <p data-i18n="footer.about_us2">
                                 Uninext
                                 mong muốn trở thành người đồng hành tin cậy của các bạn trong hành trình chuyển đổi số.
                                 Chúng
@@ -368,32 +385,33 @@
         
                         </div> <!-- /.logo-widget -->
                         <div class="col-lg-2 col-12 footer-list">
-                            <h6 class="title">Khám phá</h6>
+                            <h6 class="title" data-i18n="footer.explore">Khám phá</h6>
                             <ul>
-                                <li><a href="about.html">Về Uninext</a></li>
+                                <li><a href="about.html" data-i18n="footer.about">Về Uninext</a></li>
         
-                                <li><a href="index.html#our-case">Lĩnh vực</a></li>
-                                <li><a href="index.html#our-solution">Dịch vụ cung cấp</a></li>
-                                <li><a href="contact.html">Liên hệ với chúng tôi</a></li>
+                                <li><a href="index.html#our-case" data-i18n="footer.field">Lĩnh vực</a></li>
+                                <li><a href="index.html#our-solution" data-i18n="footer.service">Dịch vụ cung cấp</a></li>
+                                <li><a href="contact.html" data-i18n="footer.contact">Liên hệ với chúng tôi</a></li>
                             </ul>
                         </div> <!-- /.footer-list -->
         
                         <div class="col-lg-3 col-12  footer-list">
-                            <h6 class="title">Sản phẩm</h6>
+                            <h6 class="title" data-i18n="footer.product">Sản phẩm</h6>
                             <ul>
-                                <li><a href="product-service.html#Carnext">Phần mềm Carnext</a></li>
-                                <li><a href="product-service.html#Carinfo">Phần mềm Carinfo</a></li>
-                                <li><a href="offshore-service.html#PCCC">Ứng dụng quản lý thiết bị PCCC</a></li>
+                                <li><a href="product-service.html#Carnext" data-i18n="footer.carnext">Phần mềm Carnext</a></li>
+                                <li><a href="product-service.html#Carinfo" data-i18n="footer.carinfo">Phần mềm Carinfo</a></li>
+                                <li><a href="offshore-service.html#PCCC" data-i18n="footer.pccc">Ứng dụng quản lý thiết bị
+                                        PCCC</a></li>
                             </ul>
                         </div> <!-- /.footer-gallery -->
         
                         <div class="col-lg-3 col-12 contact-widget">
-                            <h6 class="title">Thông tin liên hệ</h6>
+                            <h6 class="title" data-i18n="footer.contact_infor">Thông tin liên hệ</h6>
                             <ul>
                                 <li>
                                     <i class="flaticon-direction-signs"></i>
                                     <a target="_blank" href="http://maps.google.com/?q=Số nhà 34, ngõ 5, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, thành phố
-        										Hà Nội, Việt Nam">
+            												Hà Nội, Việt Nam" data-i18n="footer.contact_infor_detail">
                                         Số nhà 34, ngõ 5, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, thành
                                         phố
                                         Hà Nội, Việt Nam
@@ -406,7 +424,7 @@
                                 </li>
                                 <li>
                                     <i class="fa fa-phone" aria-hidden="true"></i>
-                                    <a href="tel:0397 985 866">0397 985 866</a>
+                                    <a href="tel:0397 985 866" data-i18n="footer.phone">0397 985 866</a>
                                 </li>
                                 <li>
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -418,10 +436,10 @@
                 </div> <!-- /.container -->
             </div> <!-- /.top-footer -->
             <!-- <div class="bottom-footer">
-        									<div class="container">
-        										<p>&copy; Copyrights 2023. All Rights Reserved.</p>
-        									</div>
-        								</div> /.bottom-footer -->
+            											<div class="container">
+            												<p>&copy; Copyrights 2023. All Rights Reserved.</p>
+            											</div>
+            										</div> /.bottom-footer -->
         </footer> <!-- /.theme-footer-two -->
 
         <!-- Scroll Top Button -->

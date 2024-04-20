@@ -1,0 +1,151 @@
+{
+    "title_page": {
+        "home": "Trang chủ - Uninext",
+        "about": "Thông tin về chúng tôi - Uninext",
+        "contact": "Liên hệ với chúng tôi - Uninext",
+        "product_service": "Product Service - Uninext",
+        "outsource_service": "Outsource Service - Uninext"
+    },
+    "header": {
+        "home": "Trang chủ",
+        "about_uninext": "Về Uninext",
+        "company_info": "Thông tin công ty",
+        "services": "Dịch vụ",
+        "product": "Product",
+        "outsource": "Out Source",
+        "contact": "Liên hệ"
+    },
+    "slider": {
+        "welcome": "Chào mừng bạn đến với ",
+        "about_us": "VỀ CHÚNG TÔI",
+        "target": "GIẢI PHÁP CÔNG NGHỆ TIÊN TIẾN",
+        "target_detail": "GIẢI PHÁP CÔNG NGHỆ TIÊN TIẾN",
+        "target2": "Trải nghiệm dịch vụ chuyên nghiệp và tận tâm",
+        "target2_detail": "Khách hàng hài lòng là ưu tiên hàng đầu"
+    },
+    "slogan": "Chìa khoá đưa bạn đến thành công",
+    "content": {
+        "service_title": "Các dịch vụ mà UniNext cung cấp:",
+        "service_web": "Phát triển website",
+        "service_web_detail": "Dịch vụ phát triển website chuyên nghiệp",
+        "service_mobile": "Phát triển Mobile",
+        "service_mobile_detail": "Dịch vụ phát triển ứng dụng di động đa nền tảng",
+        "service_software": "Giải pháp phần mềm",
+        "service_software_detail": "Dịch vụ phát triển phần mềm quản lý cho các doanh nghiệp",
+        "service_consultant": "Tư vấn CNTT",
+        "service_consultant_detail": "Tư vấn toàn diện về chuyển đổi số.",
+        "service_outsource": "Outsource: Dịch vụ thuê ngoài chuyên nghiệp",
+        "service_detail": "Uninext cung cấp giải pháp cho đa dạng lĩnh vực: UniNext có thể đáp ứng đa dạng các lĩnh vực, từ phát triển phần mềm đến dịch vụ tư vấn chuyên sâu, đem lại sự linh hoạt và hiệu quả cho mọi nhu cầu kinh doanh.",
+        
+        "solutions": "UniNext cung cấp giải pháp cho đa dạng lĩnh vực",
+        "solutions_detail": "UniNext có thể đáp ứng đa dạng các lĩnh vực, từ phát triển phần mềm đến dịch vụ tư vấn chuyên sâu, đem lại sự linh hoạt và hiệu quả cho mọi nhu cầu kinh doanh.",
+        "why_choose_us": "VÌ SAO NÊN CHỌN UNINEXT?",
+        "good_service": "Chất lượng dịch vụ hoàn hảo",
+        "good_service_detail": "Chúng tôi cam kết mọi sản phẩm/dịch vụ mà Uninext cung cấp đều đạt tiêu chuẩn, đáp ứng mọi yêu cầu mà khách hàng đã đề ra với chất lượng tốt nhất, phù hợp với nhu cầu cụ thể của từng doanh nghiệp/cá nhân.",
+        "good_price": "Giá thành",
+        "good_price_detail": "Uninext mang đến dịch vụ phù hợp với tài chính của từng khách hàng, cung cấp đa dạng các gói dịch vụ với mức giá cạnh tranh, đảm bảo mọi khách hàng đều có thể tiếp cận được dịch vụ chất lượng cao.",
+        "good_support": "Chăm sóc khách hàng",
+        "good_support_detail": "Với Uninext, khách hàng luôn là trung tâm của mọi hoạt động và quyết định của mình, với đội ngũ nhân viên chuyên nghiệp, nhiệt tình sẵn sàng hỗ trợ khách hàng 24/7 để giải đáp mọi thắc mắc của khách hàng, xử lý mọi vấn đề phát sinh nhanh chóng, triệt để.",
+        "good_team": "Đội ngũ chuyên nghiệp",
+        "good_team_detail": "Uninext sở hữu đội ngũ nhân viên chuyên nghiệp, giàu kinh nghiệm và nhiệt huyết trong lĩnh vực",
+        "core_value": "GIÁ TRỊ CỐT LÕI",
+        "core_value_detail": "Với tốc độ phát triển nhanh chóng mặt của CNTT như hiện nay, Uninext luôn không ngừng nỗ lực sáng tạo cũng như cập nhật công nghệ mới để nâng cấp bản thân.",
+        "core_value_detail2": "Là 1 công ty phần mềm, chúng tôi mong muốn sẽ mang đến những giải pháp tối ưu nhất, dịch vụ tốt nhất mà vẫn tiết kiệm chi phí cho khách hàng."
+    },
+    "footer": {
+        "about_us": "Uninext là một công ty công nghệ chuyên cung cấp các giải pháp và dịch vụ công nghệ thông tin. Chúng tôi tin rằng, công nghệ là chìa khóa để doanh nghiệp phát triển bền vững.",
+        "about_us2": "Uninext mong muốn trở thành người đồng hành tin cậy của các bạn trong hành trình chuyển đổi số. Chúng tôi sẽ cùng bạn xây dựng một doanh nghiệp hiện đại, năng động và hiệu quả hơn.",
+        "explore": "KHÁM PHÁ",
+        "about": "Về Uninext",
+        "field": "Lĩnh vực",
+        "service": "Dịch vụ cung cấp",
+        "contact": "Liên hệ với chúng tôi",
+        "product": "Sản phẩm",
+        "carnext": "Phần mềm Carnext",
+        "carinfo": "Phần mềm Carinfo",
+        "pccc": "Ứng dụng quản lý thiết bị PCCC",
+        "contact_infor": "THÔNG TIN LIÊN HỆ",
+        "contact_infor_detail": "Số nhà 34, ngõ 5, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, thành phố Hà Nội, Việt Nam",
+        "phone": "(+84)397 985 866"
+    },
+    "about": {
+        "slogan_about": "Uninext là một công ty công nghệ chuyên cung cấp các giải pháp và dịch vụ công nghệ thông tin. Với đội ngũ nhân viên trẻ trung, năng động, được đào tạo bài bản, Uninext luôn nỗ lực mang đến cho khách hàng những sản phẩm và dịch vụ chất lượng cao, đáp ứng nhu cầu của khách hàng.",
+        "history": "LỊCH SỬ HÌNH THÀNH",
+        "history_about": "Bắt nguồn từ niềm đam mê công nghệ, một nhóm kỹ thuật viên dày dặn kinh nghiệm đã tập hợp lại với nhau. Họ nhận thấy rõ xu hướng phát triển bùng nổ của công nghệ số, đồng thời nhìn ra được tiềm năng của nó trong việc thúc đẩy nền kinh tế nói chung và hỗ trợ các doanh nghiệp nói riêng. Từ đó, cái tên Uninext ra đời.",
+        "history_about2": "Với sự nghiên cứu kỹ lưỡng thị trường và tiếp thu ý kiến từ các garage uy tín tại Hà Nội, UniNext cho ra mắt sản phẩm đầu tay - phần mềm quản lý garage ô tô. \"Đứa con đầu lòng\" này nhanh chóng chiếm được lòng tin của nhiều garage, khẳng định vị thế của UniNext trên thị trường và trở thành bước đệm vững chắc cho những mục tiêu xa hơn. Với niềm tin và sự nỗ lực không ngừng nghỉ của mình, Uninext cam kết mang đến những giá trị, những giải pháp có ích giúp thúc đẩy nền kinh tế số, đem lại giá trị thiết thực cho xã hội.",
+        "customer": "Khách hàng",
+        "project": "Dự án",
+        "employee": "Nhân sự"
+    },
+    "product_service": {
+        "carnext": {
+            "content1": "Carnext là phần mềm được Uninext phát triển đặc biệt để đáp ứng nhu cầu của các doanh nghiệp trong ngành ô tô.",
+            "content2": "Với Carnext, bạn có thể dễ dàng quản lý mọi hoạt động của garage, từ tiếp nhận khách hàng, sửa chữa xe, quản lý kho phụ tùng, cho đến thanh toán và chăm sóc khách hàng.",
+            "content3": "Carnext giúp bạn tối ưu hoá quy trình vận hành của xưởng, giúp loại bỏ các bước nhập liệu thủ công tốn thời gian và công sức, từ đó nâng cao doanh thu cho garage của mình."
+        },
+        "carinfo": {
+            "content1": "Với mong muốn tạo ra một hệ sinh thái riêng dành cho khách hàng và garage, Uninext đã phát triển thêm phần mềm Carinfo - phần mềm dành riêng cho khách hàng của xưởng. Phần mềm này giúp cho chủ xe và garage giao tiếp với nhau thuận tiện mà không cần gặp mặt trực tiếp.",
+            "content2": "Thêm vào đó, khách hàng có thể xác nhận báo giá, theo dõi tình trạng của xe ngay trên phần mềm mà không cần gọi điện hay đến tận xưởng để kiểm tra. Tạo trải nghiệm tốt nhất cho khách hàng khi sử dụng dịch vụ tại gara của bạn."
+        }
+    },
+    "outsource_service": {
+        "introduce": "Giới thiệu dịch vụ",
+        "introduce_detail": "Phát triển off-shore là hình thức thuê ngoài (outsourcing) một phần hoặc toàn bộ hoạt động phát triển phần mềm, website hoặc hệ thống thông tin cho các công ty ở nước ngoài.",
+        "introduce_detail2": "Các công ty off-shore thường có chi phí nhân công thấp hơn so với các nước phát triển, do đó, việc phát triển off-shore có thể giúp bạn tiết kiệm chi phí.",
+        "contact_us": "Contact us",
+        "fire_protection": {
+            "title": "Phát triển Ứng dụng quản lý thiết bị phòng cháy chữa cháy ",
+            "content": "UniNext cung cấp giải pháp giúp các doanh nghiệp/tổ chức quản lý hiệu quả các thiết bị phòng cháy chữa cháy của mình.",
+            "content2": "Ứng dụng được thiết kế để đáp ứng nhu cầu đa dạng của khách hàng, từ theo dõi tình trạng hoạt động, lịch sử bảo trì, quản lý kiểm kê thiết bị đến lập kế hoạch kiểm tra định kỳ, đảm bảo an toàn phòng cháy chữa cháy."
+        },
+        "mobile_dev": {
+            "title": "Phát triển Mobile",
+            "content": "Chúng tôi cung cấp dịch vụ phát triển ứng dụng di động đa nền tảng cho iOS và Android, giúp bạn tiếp cận lượng lớn người dùng trên các thiết bị khác nhau.",
+            "content2": "Uninext có đội ngũ kỹ sư giàu kinh nghiệm và am hiểu các công nghệ mới nhất, đảm bảo tạo ra các ứng dụng di động chất lượng cao, đáp ứng đầy đủ nhu cầu của bạn."
+        },
+        "web_dev": {
+            "title": "Phát triển Web",
+            "content": "Uninext mang đến dịch vụ phát triển website chuyên nghiệp, đáp ứng mọi nhu cầu của bạn.",
+            "content2": "Website của bạn sẽ sở hữu đầy đủ tính năng cần thiết, giao diện bắt mắt và thu hút, được xây dựng dựa trên các công nghệ web tiên tiến nhất. Nhờ vậy, website luôn hoạt động ổn định, bảo mật cao và dễ dàng quản lý."
+        },
+        "solution": {
+            "title": "Giải pháp phần mềm",
+            "content": "UniNext cung cấp dịch vụ phát triển phần mềm quản lý cho các doanh nghiệp, giúp bạn tự động hóa các quy trình, nâng cao hiệu quả hoạt động và tăng lợi nhuận.",
+            "content2": "Giải pháp phần mềm được thiết kế riêng theo nhu cầu của từng doanh nghiệp sẽ giúp bạn tối ưu hóa quy trình làm việc, tiết kiệm thời gian và chi phí."
+        },
+        "IT_consultant": {
+            "title": "Tư vấn CNTT",
+            "content": "Nhờ sở hữu đội ngũ tư vấn dày dặn kinh nghiệm cùng chuyên gia trong ngành, UniNext tự tin mang đến cho quý khách hàng dịch vụ tư vấn toàn diện về chuyển đổi số, phát triển và vận hành hệ thống, cũng như thiết kế hệ thống cho nhiều lĩnh vực đa dạng."
+        },
+        "why_choose": {
+            "title": "TẠI SAO CHỌN UNINEXT CHO DỰ ÁN PHÁT TRIỂN OFFSHORE?",
+            "content": {
+                "team": {
+                    "title": "Đội ngũ chuyên môn có năng lực",
+                    "content": "100% đội ngũ nhân viên tốt nghiệp từ các trường đại học, Đội ngũ được đào tạo bài bản và thường xuyên cập nhật các công nghệ mới nhất, đảm bảo đáp ứng mọi yêu cầu của khách hàng."
+                },
+                "quality": {
+                    "title": "Chất lượng",
+                    "content": "UniNext luôn cam kết mang đến cho khách hàng những dự án chất lượng cao nhất, đáp ứng các tiêu chuẩn quốc tế và phù hợp với nhu cầu thực tế.",
+                    "content2": "Quy trình quản lý dự án bài bản, chặt chẽ, đảm bảo theo dõi sát sao tiến độ, kiểm soát chất lượng đầu ra và tối ưu hóa hiệu quả hoạt động."
+                },
+                "speed": {
+                    "title": "Tốc độ phát triển nhanh chóng",
+                    "content": "UniNext áp dụng quy trình làm việc khoa học, tối ưu hóa thời gian và nguồn lực, giúp đẩy nhanh tiến độ dự án mà vẫn đảm bảo chất lượng.",
+                    "content2": "Linh hoạt trong việc điều chỉnh quy trình và phương pháp làm việc để phù hợp với yêu cầu cụ thể của từng dự án."
+                }
+            }
+        }
+    },
+    "contact": {
+        "title": "LIÊN HỆ VỚI CHÚNG TÔI",
+        "content": "Uninext luôn sẵn sàng hỗ trợ, hợp tác với bạn",
+        "full_name": "Họ tên",
+        "phone_number": "Số điện thoại",
+        "email": "Email",
+        "message": "Lời nhắn",
+        "submit": "Gửi thông tin",
+        "toast_success": "Cảm ơn bạn đã gửi yêu cầu liên hệ cho chúng tôi!",
+        "toast_error": "Đã có lỗi xảy ra, vui lòng thử lại!"
+    }
+}

@@ -1,0 +1,150 @@
+{
+    "title_page": {
+        "home": "Home - Uninext",
+        "about": "About us - Uninext",
+        "contact": "Contact us - Uninext",
+        "product_service": "Product Service - Uninext",
+        "outsource_service": "Outsource Service - Uninext"
+    },
+    "header": {
+        "home": "Home",
+        "about_uninext": "About Us",
+        "company_info": "Information",
+        "services": "Services",
+        "product": "Products",
+        "outsource": "Outsourcing",
+        "contact": "Contact"
+    },
+    "slider": {
+        "welcome": "Welcome to",
+        "about_us": "About Us",
+        "target": "Supporting your business",
+        "target_detail": "Advanced Technology Solutions",
+        "target2": "Experience our professional and dedicated services.",
+        "target2_detail": "Customer satisfaction is our top priority"
+    },
+    "slogan": "The key to success",
+    "content": {
+        "service_title": "Our Services",
+        "service_web": "Web development",
+        "service_web_detail": "Professional website development service",
+        "service_mobile": "Mobile development",
+        "service_mobile_detail": "Multi-platform mobile application development service",
+        "service_software": "Software solutions",
+        "service_software_detail": " Development of management software solutions for businesses",
+        "service_consultant": "IT Consulting",
+        "service_consultant_detail": " Comprehensive consulting on digital transformation",
+        "service_outsource": "Outsource: Dịch vụ thuê ngoài chuyên nghiệp",
+        "service_detail": "UniNext provides solutions for diverse fields: UniNext can cater to a wide range of industries, from software development to specialized consulting services, offering flexibility and efficiency to meet all business needs.",
+        "solutions": "Solutions tailored for diverse industries.",
+        "solutions_detail": "UniNext can cater to a wide range of industries, from software development to specialized consulting services, providing flexibility and efficiency for all business needs.",
+        "why_choose_us": "WHY CHOOSE UNINEXT?",
+        "good_service": "Quality service",
+        "good_service_detail": "We are committed to ensuring that all products and services provided by UniNext meet the standards and fulfill all requirements set by customers with the best quality, tailored to the specific needs of each business or individual.",
+        "good_price": "Affordable price",
+        "good_price_detail": "UniNext offers services that are tailored to the budget of each client. We provide a variety of service packages at competitive prices, ensuring that all clients can access high-quality services.",
+        "good_support": "Customer care",
+        "good_support_detail": "At UniNext, the customer is always at the center of our every activity and decision. Our team of professional and enthusiastic staff is always ready to support customers 24/7 to answer any questions, and handle any problems that arise quickly and thoroughly.",
+        "good_team": "Professional team",
+        "good_team_detail": "UniNext has a team of professional, experienced, and passionate staff in the field. We are always updating our knowledge and constantly improving our skills to provide customers with the best service.",
+        "core_value": "CORE VALUES",
+        "core_value_detail": "With the rapid pace of development in IT today, We is constantly striving to innovate and update new technologies to improve ourselves.",
+        "core_value_detail2": "As a software company, we aim to provide the best possible solutions and services while still saving costs for our customers."
+    },
+    "footer": {
+        "about_us": "UniNext is a technology company specializing in providing information technology solutions and services. We believe that technology is the key to sustainable business development.",
+        "about_us2": "UniNext aspires to be a reliable companion for you on your digital transformation journey. We will work with you to build a modern, dynamic, and more efficient business.",
+        "explore": "EXPLORE",
+        "about": "About Us",
+        "field": "Areas of Activity",
+        "service": "Our Services",
+        "contact": "Contact",
+        "product": "Products",
+        "carnext": "CarNext Software",
+        "carinfo": "CarInfo Software",
+        "pccc": "Fire Equipment Management Application",
+        "contact_infor": "Contact Information",
+        "contact_infor_detail": "No. 34, Alley 5, Hoang Quoc Viet Street, Nghia Do Ward, Cau Giay District, Hanoi City, Vietnam",
+        "phone": "+84 397 985 866"
+    },
+    "about": {
+        "slogan_about": "Uninext is a technology company specializing in providing information technology solutions and services. With a young, dynamic and well-trained team, Uninext always strives to bring customers high-quality products and services, meeting the needs of customers.",
+        "history": "FOUNDATION HISTORY",
+        "history_about": "Driven by a passion for technology, a group of experienced engineers came together. They clearly saw the booming development trend of digital technology, and at the same time saw its potential in promoting the economy in general and supporting businesses in particular. From there, the name Uninext was born.",
+        "history_about2": "With careful market research and feedback from reputable garages in Hanoi, UniNext launched its first product - garage management software. This \"first child\" quickly won the trust of many garages, affirming the position of UniNext on the market and becoming a solid foundation for further goals. With its belief and continuous efforts, Uninext is committed to bringing values ​​and solutions that help promote the digital economy, bringing practical value to society.",
+        "customer": "Customer",
+        "project": "Project",
+        "employee": "Employee"
+    },
+    "product_service": {
+        "carnext": {
+            "content1": "Carnext is a comprehensive software solution tailored by Uninext to address the needs of business in the automative industry.",
+            "content2": "With Carnext, you can seamlessly manage every aspect of your garage operations, from customer reception and vehicle repair to spare parts inventory management, billing, and customer service.",
+            "content3": "Carnext streamlines your workshop's workflows, eliminating time-consuming and laborious manual data entry, consequently, boosting your garage's revenue."
+        },
+        "carinfo": {
+            "content1": "With the desire to create a dedicated ecosystem for customers and garages, Uninext has developed the Carinfo software - a software specifically for garage customers. This software helps car owners and garages communicate conveniently without having to meet in person.",
+            "content2": "In addition, customers can confirm quotes, track the status of their car right on the software without having to call or come to the garage to check. Create the best experience for customers when using the service at your garage."
+        }
+    },
+    "outsource_service": {
+        "introduce": "Service Introduction",
+        "introduce_detail": "Off-shore development is a form of outsourcing all or part of the software, website, or information system development activities to companies abroad.",
+        "introduce_detail2": "Off-shore companies often have lower labor costs than developed countries, so off-shore development can help you save money.",
+        "contact_us": "Contact us",
+        "fire_protection": {
+            "title": "Fire Protection Equipment Management Application Development",
+            "content": "UniNext provides a solution to help businesses/organizations effectively manage their fire protection equipment.",
+            "content2": "The application is designed to meet the diverse needs of customers, from tracking operating status, maintenance history, equipment inventory management to planning periodic inspections, ensuring fire safety."
+        },
+        "mobile_dev": {
+            "title": "Mobile Development",
+            "content": "We provide multi-platform mobile application development services for iOS and Android, helping you reach a large number of users on different devices.",
+            "content2": "Uninext has a team of experienced engineers who are knowledgeable about the latest technologies, ensuring to create high-quality mobile applications that fully meet your needs."
+        },
+        "web_dev": {
+            "title": "Web Development",
+            "content": "Uninext provides professional website development services to meet all your needs.",
+            "content2": "Your website will have all the necessary features, an eye-catching and attractive interface, and be built on the most advanced web technologies. As a result, the website always operates stably, with high security and easy to manage."
+        },
+        "solution": {
+            "title": "Software Solutions",
+            "content": "UniNext provides software development services for businesses, helping you automate processes, improve operational efficiency and increase profits.",
+            "content2": "Software solutions designed specifically for each business will help you optimize your workflow, save time and money."
+        },
+        "IT_consultant": {
+            "title": "IT Consulting",
+            "content": "With a team of experienced consultants and experts in the industry, UniNext is confident to provide customers with comprehensive consulting services on digital transformation, system development and operation, as well as system design for many diverse fields."
+        },
+        "why_choose": {
+            "title": "WHY CHOOSE UNINEXT FOR OFFSHORE DEVELOPMENT PROJECT?",
+            "content": {
+                "team": {
+                    "title": "Competent Team",
+                    "content": "100% of our employees graduated from universities. Our team is well-trained and regularly updated on the latest technologies, ensuring that we can meet all customer requirements."
+                },
+                "quality": {
+                    "title": "Quality",
+                    "content": "UniNext is always committed to providing customers with the highest quality projects, meeting international standards and matching actual needs.",
+                    "content2": "We have a systematic and rigorous project management process that ensures close monitoring of progress, control of output quality, and optimization of operational efficiency."
+                },
+                "speed": {
+                    "title": "Rapid Development Speed",
+                    "content": "UniNext applies a scientific working process that optimizes time and resources, helping to accelerate project progress while still ensuring quality.",
+                    "content2": "We are flexible in adjusting our processes and working methods to suit the specific requirements of each project."
+                }
+            }
+        }
+    },
+    "contact": {
+        "title": "CONTACT US",
+        "content": "Uninext is always ready to support and cooperate with you.",
+        "full_name": "Full Name",
+        "phone_number": "Phone Number",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Submit",
+        "toast_success": "Thank you for sending us your contact request!",
+        "toast_error": "An error occurred. Please try again later."
+    }
+}

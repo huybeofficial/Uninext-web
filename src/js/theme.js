@@ -114,32 +114,23 @@
 
 
          // ------------------------------ Language Switcher
-         var plang = $('#polyglotLanguageSwitcher');
-         if (plang.length) {
-              plang.polyglotLanguageSwitcher({
-                effect: 'fade',
-                        testMode: true,
-                        onChange: function(evt){
-                            alert("The selected language is: "+evt.selectedItem);
-                        }
-                      //      ,afterLoad: function(evt){
-                      //          alert("The selected language has been loaded");
-                      //      },
-                      //      beforeOpen: function(evt){
-                      //          alert("before open");
-                      //      },
-                      //      afterOpen: function(evt){
-                      //          alert("after open");
-                      //      },
-                      //      beforeClose: function(evt){
-                      //          alert("before close");
-                      //      },
-                      //      afterClose: function(evt){
-                      //          alert("after close");
-                      //      }
-              });
-          };
+         
+      var plang = $('#language_switcher');
+         console.log('plang', plang);
+         
+      if (plang.length) {
+        // Add event listener to each button in the dropdown
+        $('#language_switcher button').click(function () {
+          // Get the value of the clicked button
+          var lang = $(this).val();
 
+          // Call the changeLanguage function with the selected language
+          changeLanguage(lang);
+
+          // Reload the page
+          location.reload();
+        });
+      }
 
         // ------------------------------- Feature Slider
         var tSlider = $ (".top-features-slide");
@@ -500,5 +491,73 @@
 
 
     })
-    
+
+    // change language function
+    let currentLang = 'en';
+
+    // Function to update content based on selected language
+    function updateContent(langData) {
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            if (key.includes('.')) {
+                const keys = key.split('.');
+                let temp = langData;
+                keys.forEach(k => {
+                    temp = temp[k];
+                });
+                element.textContent = temp;
+            } else {
+                element.textContent = langData[key];
+            }
+            // check element has attribute href to change link
+            // if (element.hasAttribute('href') && !element.getAttribute('href').includes(currentLang + '/')) {
+            //     element.setAttribute('href', currentLang + '/' + element.getAttribute('href'));
+            // }
+        });
+    }
+
+    // // Function to set the language preference
+    function setLanguagePreference(lang) {
+        localStorage.setItem('language', lang);
+        // location.reload();
+    }
+
+    // // Function to fetch language data
+    const fetchLanguageData = async (lang) => {
+        const response = await fetch(`languages/${lang}.json`);
+        return response.json();
+    }
+
+    // // Function to change language
+    const changeLanguage = async (lang) => {
+        // document.documentElement.lang = lang;
+        currentLang = lang;
+        await setLanguagePreference(lang);
+        
+        const langData = await fetchLanguageData(lang);
+        updateContent(langData);
+        // var plang = $('#polyglotLanguageSwitcher');
+        // if (plang.length) {
+        //     plang.find('li').removeClass('polyglot-selected');
+        //     plang.find('li[data-value="' + lang + '"]').addClass('polyglot-selected');
+        // }
+        // toggleArabicStylesheet(lang); // Toggle Arabic stylesheet
+    }
+
+    // // // Call updateContent() on page load
+  window.addEventListener('DOMContentLoaded', async () => {
+    const userPreferredLanguage = localStorage.getItem('language') || 'en';
+    const langData = await fetchLanguageData(userPreferredLanguage);
+    updateContent(langData);
+    $('#polyglot-language-options').val(userPreferredLanguage);
+
+    // check language
+    let selectLanguage = localStorage.getItem('language') || 'en';
+    if (selectLanguage == 'vi') {
+      changeLanguage('vi');
+      document.querySelector('.img-lang').src = "images/home/vi.webp";
+    } else {
+      changeLanguage('en');
+    }
+  });
 })(jQuery)

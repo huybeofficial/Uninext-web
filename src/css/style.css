@@ -76,7 +76,7 @@
 /*----------- Fancybox css -------*/
 @import url('../vendor/fancybox/dist/jquery.fancybox.min.css');
 /*----Language Switcher---*/
-@import url('../vendor/language-switcher/polyglot-language-switcher.css');
+@import url('../vendor/language_switcher/polyglot-language_switcher.css');
 /*------------- Map -------------*/
 @import url('../vendor/sanzzy-map/dist/snazzy-info-window.min.css');
 
@@ -222,6 +222,7 @@ h6 {
 
 p {
   line-height: 27px;
+  padding-bottom: 0 !important;
 }
 
 ul {
@@ -413,6 +414,18 @@ h6 a,
   background: #001a57;
 }
 
+.search-option ul, .search-option ul li button {
+  width: 160px;
+}
+.search-option ul li button {
+  background-color: white;
+}
+
+.search-option ul li button:hover {
+  background: #001a57;
+  color: white;
+}
+
 .header-one .top-header .address-wrapper .quotes a,
 #theme-main-banner .camera_pag .camera_pag_ul li,
 .theme-pagination ul li a:hover,
@@ -502,8 +515,8 @@ body .theme-button-one:hover {
 }
 
 .header-one .top-header {
-  background: #fff;
-  padding: 40px 0 32px 0;
+  /* background: #fff;
+  padding: 40px 0 32px 0; */
 }
 
 .header-one .top-header .address-wrapper li {
@@ -555,7 +568,7 @@ body .theme-button-one:hover {
 /*--------------------------- Theme Header Two  ---------------------*/
 .header-two .top-header {
   background: #000f32;
-  padding: 12px 0;
+  /* padding: 12px 0; */
 }
 
 .header-two .top-header .left-widget li {
@@ -618,7 +631,7 @@ body .theme-button-one:hover {
 
 .theme-menu-wrapper .right-widget ul li {
   display: inline-block;
-  line-height: 75px;
+  line-height: 50px;
   vertical-align: middle;
 }
 
@@ -665,7 +678,8 @@ body .theme-button-one:hover {
   background: transparent;
   font-size: 15px;
   color: #cfd6e6;
-  width: 55px;
+  width: 100%;
+  margin-top: 10px
 }
 
 .theme-menu-wrapper .right-widget .search-option .dropdown-toggle:after {
@@ -676,8 +690,6 @@ body .theme-button-one:hover {
   -webkit-transform: none !important;
   transform: none !important;
   position: absolute;
-  height: 55px;
-  width: 280px;
   padding: 5px;
   border-radius: 0;
   right: 0 !important;
@@ -751,7 +763,7 @@ body .theme-button-one:hover {
 }
 
 .header-two .theme-menu-wrapper .right-widget ul li {
-  line-height: 97px;
+  /* line-height: 97px; */
 }
 
 .header-two .theme-menu-wrapper .right-widget .search-option .dropdown-toggle {
@@ -1277,7 +1289,7 @@ body .theme-button-one:hover {
 }
 
 .theme-counter .bg {
-  background: url(../images/home/pattern.png) no-repeat center center;
+  background: url(../images/home/pattern.webp) no-repeat center center;
   text-align: center;
   padding: 85px 0 85px 0;
 }
@@ -1714,7 +1726,7 @@ body .theme-button-one:hover {
 /*----------------- CallOut Banner  --------------*/
 .callout-banner {
   background-color: #001a57;
-  background-image: url(../images/home/pattern2.png);
+  background-image: url(../images/home/pattern2.webp);
   padding: 40px 0;
 }
 
@@ -1806,7 +1818,7 @@ body .theme-button-one:hover {
 
 /*------------------- About Company Stye Two -------------------*/
 .about-compnay-two {
-  background: url(../images/home/11.jpg) no-repeat center center;
+  background: url(../images/home/11.webp) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   background-color: #707d9e;
@@ -2243,7 +2255,7 @@ body .theme-button-one:hover {
 
 /*---------------------- Theme Inner Banner -----------------*/
 .theme-inner-banner {
-  background: url(../images/about_banner.jpg) no-repeat center center;
+  background: url(../images/about_banner.webp) no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   background-color: #707d9e;
@@ -2263,7 +2275,7 @@ body .theme-button-one:hover {
 
 /*------------------- Why WE Best -------------------*/
 .why-we-best {
-  background: url(../images/home/11.jpg) no-repeat center center;
+  background: url(../images/home/11.webp) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   background-color: #707d9e;
@@ -2905,7 +2917,7 @@ body .theme-button-one:hover {
 }
 
 .contact-us-section .img-box {
-  background: url(../images/home/22.jpg) no-repeat center;
+  background: url(../images/home/22.webp) no-repeat center;
   background-size: cover;
   height: 500px;
   border-radius: 5px 0 0 5px;

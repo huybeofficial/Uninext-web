@@ -49,6 +49,9 @@
   .footer-list {
     padding-left: 3rem !important;
   }
+  .menu-wrapper {
+    margin-left: 50px;
+  }
 
   .container {
     padding-left: 0 !important;
@@ -160,6 +163,10 @@
     padding-right: 52px;
   }
 
+  .core-values .main-title {
+    text-align: center;
+  }
+
   .section-spacing,
   .faq-section,
   .why-we-best,
@@ -204,7 +211,7 @@
   }
 
   .theme-menu-wrapper .right-widget ul li {
-    line-height: 60px;
+    line-height: 50px;
   }
 
   .theme-menu-wrapper .right-widget {
@@ -289,7 +296,7 @@
   }
 
   .header-two .theme-menu-wrapper .right-widget ul li {
-    line-height: 70px;
+    /* line-height: 70px; */
   }
 
   .header-two .theme-menu-wrapper .right-widget .cart-icon a span {
@@ -324,9 +331,6 @@
     float: none;
   }
 
-  .callout-banner p {
-    padding: 20px 0;
-  }
 
   .callout-banner p:before {
     display: none;
@@ -585,6 +589,17 @@
 }
 
 @media (max-width: 575px) {
+  .callout-banner .container {
+    flex-direction: column;
+  }
+    .callout-banner p {
+      padding-left: 0;
+    }
+.our-case .single-case-block img {
+    object-fit: cover;
+    object-position: left;
+    height: 160px;
+}
   .theme-inner-banner .overlay h2 {
     font-size: 35px;
   }
@@ -762,8 +777,6 @@
     padding: 12px 0 18px 0;
   }
 }
-
-/*(max-width: 575px)*/
 
 @media (max-width: 650px) {
 

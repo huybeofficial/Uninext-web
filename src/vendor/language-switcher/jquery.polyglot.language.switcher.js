@@ -130,6 +130,7 @@
 
         var rootElement = $(this);
         var rootElementId = $(this).attr('id');
+        console.log(rootElementId);
         var aElement;
         var ulElement = $("<ul class=\"dropdown\">");
         var length = 0;
@@ -242,27 +243,19 @@
         function init() {
             var selectedItem;
             var options = $("#" + rootElementId + " > form > select > option");
-            if (isStaticWebSite) {
-                var selectedId;
-                var url = window.location.href;
-                options.each(function(){
-                    var id = $(this).attr("id");
-                    if(url.indexOf('/'+id+'/')>=0){
-                        selectedId = id;
-                    }
-                });
-            }
+            var selectedValue = localStorage.getItem('language');
+
             options.each(function () {
                 var id = $(this).attr("id");
-                var selected;
-                if (isStaticWebSite) {
-                    selected = selectedId === id;
-                }else{
-                    selected = $(this).attr("selected")
-                }
+                var value = $(this).attr("value");
+                var text = $(this).text();
                 var liElement = toLiElement($(this));
-                if (selected) {
+
+                // Kiểm tra giá trị từ localStorage với giá trị của option
+                if (value === selectedValue) {
                     selectedItem = liElement;
+                    // Thiết lập selected cho option tương ứng
+                    $(this).prop('selected', true);
                 }
                 liElements.push(liElement);
                 if (length > 0) {
@@ -290,6 +283,7 @@
             rootElement.append(aElement);
             rootElement.append(ulElement);
             if (selectedItem) {
+                console.log(selectedItem);
                 doAction(selectedItem);
             }
         }
@@ -297,6 +291,7 @@
         function toLiElement(option) {
             var id = $(option).attr("id");
             var value = $(option).attr("value");
+            console.log(value);
             var text = $(option).text();
             var liElement;
             if (isStaticWebSite) {

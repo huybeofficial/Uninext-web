@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dịch vụ Product | Uninext</title>
+    <title data-i18n="title_page.product_service">Dịch vụ Product | Uninext</title>
     
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
     <meta property="og:url" content="https://uninext.vn/offshore-service.html">
     <meta property="og:description" content="Uninext cung cấp dịch vụ Product chất lượng cao, giúp khách hàng tạo ra sản phẩm công nghệ ưu việt. Với đội ngũ kỹ sư tài năng và kinh nghiệm, chúng tôi cam kết mang đến giải pháp tối ưu nhất cho nhu cầu của bạn.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://uninext.vn/images/thumbnails/thumbnail-web.png">
+    <meta property="og:image" content="https://uninext.vn/images/thumbnails/thumbnail-web.webp">
     <meta property="og:locale" content="vi" />
     <!-- For Resposive Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,7 +25,7 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#061948">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="56x56" href="images/logo/uninext.png">
+    <link rel="icon" type="image/webp" sizes="56x56" href="images/logo/uninext.webp">
     <!-- Main style sheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/services.css">
@@ -59,23 +59,21 @@
 			============================================== 
 			-->
         <header class="header-two">
-
             <div class="theme-menu-wrapper">
                 <div class="container">
                     <div class="bg-wrapper clearfix">
-                        <div class="logo float-left"><a href="index.html"><img src="images/logo/Uninext logo rs.png"
-                                    alt=""></a>
-                        </div>
-                        <!-- ============== Menu Warpper ================ -->
-                        <div class="menu-wrapper float-right">
+                        <div class="logo"><a href="index.html"><img src="images/logo/Uninext logo rs.webp" alt=""></a></div>
+                        <!-- ============== Menu Wrapper ================ -->
+                        <div class="menu-wrapper float-left">
                             <nav id="mega-menu-holder" class="clearfix">
                                 <ul class="clearfix">
-                                    <li><a href="index.html">Trang chủ</a>
-
+                                    <li><a href="index.html" data-i18n="header.home">Trang chủ</a>
+        
                                     </li>
-                                    <li><a href="#">Về Uninext</a>
-                                        <ul class="dropdown">
-                                            <li><a href="about.html">Thông tin công ty</a></li>
+                                    <li><a href="about.html" data-i18n="header.about_uninext">Về Uninext</a>
+                                        <!-- <ul class="dropdown">
+                                            <li><a href="about.html" data-i18n="header.company_info">Thông tin
+                                                    công ty</a></li> -->
                                             <!-- <li><a href="team.html">Đội ngũ phát triển</a></li> -->
                                             <!-- <li><a href="faq.html">Faq's</a></li> -->
                                             <!-- <li><a href="404.html">404</a></li> -->
@@ -85,47 +83,52 @@
                                             <!-- <li><a href="#">Demo two</a></li> -->
                                             <!-- </ul> -->
                                             <!-- </li> -->
-                                        </ul>
+                                        <!-- </ul> -->
                                     </li>
-                                    <li class="active"><a href="#">Dịch vụ</a>
+                                    <li class="active"><a href="product-service.html" data-i18n="header.services">Dịch vụ</a>
                                         <ul class="dropdown">
                                             <li class="bg-light"><a href="product-service.html">Product</a></li>
                                             <li><a href="offshore-service.html">Outsource</a></li>
                                         </ul>
                                     </li>
-                                    <!-- <li><a href="#">Dự án</a>
-												    </li>
-												    <li><a href="#">Tin tức</a>
-												    	<ul class="dropdown">
-												        	<li><a href="blog.html">Blog List</a></li>
-												        	<li><a href="blog-grid.html">Blog Grid</a></li>
-												        	<li><a href="blog-details.html">Blog details</a></li>
-												       </ul>
-												    </li> -->
-                                    <li><a href="contact.html">Liên hệ</a></li>
+                                    <li><a href="contact.html" data-i18n="header.contact">Liên hệ</a></li>
                                 </ul>
                             </nav> <!-- /#mega-menu-holder -->
                         </div> <!-- /.menu-wrapper -->
-                        <div class="right-widget float-right" style="visibility: hidden;">
-							<ul>
-								<li class="search-option">
-									<div class="dropdown">
-										<button type="button" class="dropdown-toggle" data-toggle="dropdown"><i
-												class="fa fa-search" aria-hidden="true"></i></button>
-										<form action="#" class="dropdown-menu">
-											<input type="text" Placeholder="Enter Your Search">
-											<button><i class="fa fa-search"></i></button>
-										</form>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<!-- search
-						<!-- search -->
+                        <div class="float-right right-widget">
+                            <ul>
+                                <li class="search-option">
+                                    <div class="dropdown">
+                                        <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa" aria-hidden="true">
+                                                <img src="images/home/gb.webp" class="img-lang" alt="language"
+                                                    title="Language" />
+                                            </i>
+                                        </button>
+                                        <ul class="dropdown-menu" id="language_switcher">
+                                            <li>
+                                                <button type="button" value="en"
+                                                    class="hover flex-row d-flex align-items-center gap-1">
+                                                    <img src="images/home/gb.webp" alt="language" title="Language" />
+                                                    English
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button type="button" value="vi"
+                                                    class=" flex-row d-flex align-items-center gap-1">
+                                                    <img src="images/home/vi.webp" alt="language" title="Language" />
+                                                    Vietnamese
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div> <!-- /.bg-wrapper -->
                 </div> <!-- /.container -->
             </div> <!-- /.theme-menu-wrapper -->
-        </header> <!-- /.header-two -->
+        </header> <!-- /.header-two --><!-- /.header-two -->
 
 
         <!-- 
@@ -156,12 +159,12 @@
                     <div class="col-xl-5 order-xl-1">
                         <div class="service-content mt-4">
                             <h2 class="main-title">Carnext</h2>
-                            <p>Carnext là phần mềm được Uninext phát triển đặc biệt để đáp ứng nhu cầu của các doanh nghiệp trong ngành
+                            <p data-i18n="product_service.carnext.content1">Carnext là phần mềm được Uninext phát triển đặc biệt để đáp ứng nhu cầu của các doanh nghiệp trong ngành
                             ô tô.
                             </p>
-                            <p>Với Carnext, bạn có thể dễ dàng quản lý mọi hoạt động của garage, từ tiếp nhận khách hàng, sửa chữa xe, quản lý kho phụ
+                            <p data-i18n="product_service.carnext.content2">Với Carnext, bạn có thể dễ dàng quản lý mọi hoạt động của garage, từ tiếp nhận khách hàng, sửa chữa xe, quản lý kho phụ
                             tùng, cho đến thanh toán và chăm sóc khách hàng.</p>
-                            <p>
+                            <p data-i18n="product_service.carnext.content3">
                             Carnext giúp bạn tối ưu hoá quy trình vận hành của xưởng, giúp loại bỏ các bước nhập liệu thủ công tốn thời gian và công
                             sức, từ đó nâng cao doanh thu cho garage của mình.
                             </p>
@@ -184,10 +187,10 @@
                     <div class="col-xl-5 order-xl-2">
                         <div class="service-content mt-4">
                             <h2 class="main-title">Carinfo</h2>
-                            <p>Với mong muốn tạo ra một hệ sinh thái riêng dành cho khách hàng và garage, Uninext đã phát triển thêm phần mềm Carinfo -
+                            <p data-i18n="product_service.carinfo.content1">Với mong muốn tạo ra một hệ sinh thái riêng dành cho khách hàng và garage, Uninext đã phát triển thêm phần mềm Carinfo -
                             phần mềm dành riêng cho khách hàng của xưởng. Phần mềm này giúp cho chủ xe và garage giao tiếp với nhau thuận tiện mà không cần gặp mặt trực tiếp.
                             </p>
-                            <p>Thêm vào đó, khách hàng có thể xác nhận báo giá, theo dõi tình trạng của xe ngay trên phần mềm mà không cần gọi điện hay
+                            <p data-i18n="product_service.carinfo.content2">Thêm vào đó, khách hàng có thể xác nhận báo giá, theo dõi tình trạng của xe ngay trên phần mềm mà không cần gọi điện hay
                             đến tận xưởng để kiểm tra. Tạo trải nghiệm tốt nhất cho khách hàng khi sử dụng dịch vụ tại gara của bạn.
                             </p>
 
@@ -210,10 +213,12 @@
                 <div class="row">
                     <div class="col-lg-4 col-12 logo-widget">
                         <div class="logo"><a href="index.html"><img style="width: 300px;"
-                                    src="images/logo/Uninext_white.png" alt=""></a></div>
-                        <p>Uninext là một công ty công nghệ chuyên cung cấp các giải pháp và dịch vụ công nghệ thông
+                                    src="images/logo/Uninext_white.webp" alt=""></a></div>
+                        <p data-i18n="footer.about_us">Uninext là một công ty công nghệ chuyên cung cấp các giải pháp và
+                            dịch vụ công nghệ thông
                             tin.
-                            Chúng tôi tin rằng, công nghệ là chìa khóa để doanh nghiệp phát triển bền vững. <br>
+                            Chúng tôi tin rằng, công nghệ là chìa khóa để doanh nghiệp phát triển bền vững.</p>
+                        <p data-i18n="footer.about_us2">
                             Uninext
                             mong muốn trở thành người đồng hành tin cậy của các bạn trong hành trình chuyển đổi số.
                             Chúng
@@ -221,32 +226,33 @@
     
                     </div> <!-- /.logo-widget -->
                     <div class="col-lg-2 col-12 footer-list">
-                        <h6 class="title">Khám phá</h6>
+                        <h6 class="title" data-i18n="footer.explore">Khám phá</h6>
                         <ul>
-                            <li><a href="about.html">Về Uninext</a></li>
+                            <li><a href="about.html" data-i18n="footer.about">Về Uninext</a></li>
     
-                            <li><a href="index.html#our-case">Lĩnh vực</a></li>
-                            <li><a href="index.html#our-solution">Dịch vụ cung cấp</a></li>
-                            <li><a href="contact.html">Liên hệ với chúng tôi</a></li>
+                            <li><a href="index.html#our-case" data-i18n="footer.field">Lĩnh vực</a></li>
+                            <li><a href="index.html#our-solution" data-i18n="footer.service">Dịch vụ cung cấp</a></li>
+                            <li><a href="contact.html" data-i18n="footer.contact">Liên hệ với chúng tôi</a></li>
                         </ul>
                     </div> <!-- /.footer-list -->
     
                     <div class="col-lg-3 col-12  footer-list">
-                        <h6 class="title">Sản phẩm</h6>
+                        <h6 class="title" data-i18n="footer.product">Sản phẩm</h6>
                         <ul>
-                            <li><a href="product-service.html#Carnext">Phần mềm Carnext</a></li>
-                            <li><a href="product-service.html#Carinfo">Phần mềm Carinfo</a></li>
-                            <li><a href="offshore-service.html#PCCC">Ứng dụng quản lý thiết bị PCCC</a></li>
+                            <li><a href="product-service.html#Carnext" data-i18n="footer.carnext">Phần mềm Carnext</a></li>
+                            <li><a href="product-service.html#Carinfo" data-i18n="footer.carinfo">Phần mềm Carinfo</a></li>
+                            <li><a href="offshore-service.html#PCCC" data-i18n="footer.pccc">Ứng dụng quản lý thiết bị
+                                    PCCC</a></li>
                         </ul>
                     </div> <!-- /.footer-gallery -->
     
                     <div class="col-lg-3 col-12 contact-widget">
-                        <h6 class="title">Thông tin liên hệ</h6>
+                        <h6 class="title" data-i18n="footer.contact_infor">Thông tin liên hệ</h6>
                         <ul>
                             <li>
                                 <i class="flaticon-direction-signs"></i>
                                 <a target="_blank" href="http://maps.google.com/?q=Số nhà 34, ngõ 5, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, thành phố
-    										Hà Nội, Việt Nam">
+    												Hà Nội, Việt Nam" data-i18n="footer.contact_infor_detail">
                                     Số nhà 34, ngõ 5, đường Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, thành
                                     phố
                                     Hà Nội, Việt Nam
@@ -259,7 +265,7 @@
                             </li>
                             <li>
                                 <i class="fa fa-phone" aria-hidden="true"></i>
-                                <a href="tel:0397 985 866">0397 985 866</a>
+                                <a href="tel:0397 985 866" data-i18n="footer.phone">0397 985 866</a>
                             </li>
                             <li>
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -271,10 +277,10 @@
             </div> <!-- /.container -->
         </div> <!-- /.top-footer -->
         <!-- <div class="bottom-footer">
-    									<div class="container">
-    										<p>&copy; Copyrights 2023. All Rights Reserved.</p>
-    									</div>
-    								</div> /.bottom-footer -->
+    											<div class="container">
+    												<p>&copy; Copyrights 2023. All Rights Reserved.</p>
+    											</div>
+    										</div> /.bottom-footer -->
     </footer> <!-- /.theme-footer-two -->
 
 

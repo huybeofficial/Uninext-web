@@ -68,7 +68,8 @@
 }
 
 #polyglotLanguageSwitcher ul.dropdown li {
-	width:100px;
+	min-width: 150px;
+	padding: 5px;
 	border-top: 1px solid #fff;
 	-webkit-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
@@ -86,7 +87,10 @@
 /* Flags */
 
 #en { 
-	background-image: url(../../images/home/gb.png);
+	background-image: url(../../images/home/gb.webp);
+}
+#vi {
+	background-image: url(../../images/home/vi.webp);
 }
 
 #fr { 
