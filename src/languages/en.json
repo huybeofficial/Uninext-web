@@ -48,7 +48,7 @@
         "good_team": "Professional team",
         "good_team_detail": "UniNext has a team of professional, experienced, and passionate staff in the field. We are always updating our knowledge and constantly improving our skills to provide customers with the best service.",
         "core_value": "CORE VALUES",
-        "core_value_detail": "With the rapid pace of development in IT today, We is constantly striving to innovate and update new technologies to improve ourselves.",
+        "core_value_detail": "With the rapid pace of development in IT today, UniNext is constantly striving to innovate and update new technologies to improve ourselves.",
         "core_value_detail2": "As a software company, we aim to provide the best possible solutions and services while still saving costs for our customers."
     },
     "footer": {
@@ -78,13 +78,13 @@
     },
     "product_service": {
         "carnext": {
-            "content1": "Carnext is a comprehensive software solution tailored by Uninext to address the needs of business in the automative industry.",
-            "content2": "With Carnext, you can seamlessly manage every aspect of your garage operations, from customer reception and vehicle repair to spare parts inventory management, billing, and customer service.",
-            "content3": "Carnext streamlines your workshop's workflows, eliminating time-consuming and laborious manual data entry, consequently, boosting your garage's revenue."
+            "content1": "Carnext is a comprehensive software solution designed to address the needs of businesses in the automotive industry. It helps you manage every aspect of your workshop operations, from customer intake and vehicle repair to inventory control, billing, and customer service.",
+            "content3": "",
+            "content2": "Carnext streamlines your workshop's workflows by eliminating time-consuming manual data entry, ultimately boosting your garage's revenue."
         },
         "carinfo": {
-            "content1": "With the desire to create a dedicated ecosystem for customers and garages, Uninext has developed the Carinfo software - a software specifically for garage customers. This software helps car owners and garages communicate conveniently without having to meet in person.",
-            "content2": "In addition, customers can confirm quotes, track the status of their car right on the software without having to call or come to the garage to check. Create the best experience for customers when using the service at your garage."
+            "content1": "With the desire to create a dedicated ecosystem for customers and garages, Uninext has developed the Carinfo software - a software specifically designed for garage customers. This software facilitates easy communication between car owners and garages directly on the platform, eliminating the need for in-person meetings.",
+            "content2": "Additionally, customers can confirm quotes and track the status of their car directly within the software, saving them time and effort compared to calling or visiting the garage in person. Let Carinfo software help you create the best possible experience for your garage customers."
         }
     },
     "outsource_service": {
@@ -92,6 +92,7 @@
         "introduce_detail": "Off-shore development is a form of outsourcing all or part of the software, website, or information system development activities to companies abroad.",
         "introduce_detail2": "Off-shore companies often have lower labor costs than developed countries, so off-shore development can help you save money.",
         "contact_us": "Contact us",
+        "product": "Products",
         "fire_protection": {
             "title": "Fire Protection Equipment Management Application Development",
             "content": "UniNext provides a solution to help businesses/organizations effectively manage their fire protection equipment.",

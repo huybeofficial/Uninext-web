@@ -162,10 +162,24 @@
   #mega-menu-holder>ul>li.has-submenu>a {
     padding-right: 52px;
   }
-
+    .about-compnay-two .theme-title-one {
+      text-align: center;
+    }
+    .about-compnay-two .theme-title-one h2:before {
+      display: none;
+    }
+    .about-compnay-two .container p {
+      text-align: center;
+    }
   .core-values .main-title {
     text-align: center;
   }
+
+    #success-form {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+    }
 
   .section-spacing,
   .faq-section,
